@@ -1,0 +1,60 @@
+@media (max-width: 800px) {
+  .hero-section {
+    padding-top: 7rem;
+  }
+  .project-card-featured {
+    grid-column: span 1;
+  }
+  .experience-layout,
+  .certificate-modal,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .certificate-modal {
+    width: calc(100vw - 1rem);
+    height: calc(100svh - 1rem);
+    overflow: auto;
+  }
+  .experience-layout > *,
+  .timeline-item {
+    min-width: 0;
+  }
+  .code-window pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .certificate-viewer {
+    height: 58svh;
+  }
+  .certificate-modal-copy {
+    padding: var(--s-4);
+  }
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-actions {
+    display: flex;
+  }
+  .hero-link-button,
+  .btn-primary,
+  .btn-secondary {
+    flex: 1 1 45%;
+  }
+  .section-heading-row {
+    align-items: start;
+    flex-direction: column;
+  }
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-content {
+    padding: var(--s-4);
+  }
+}

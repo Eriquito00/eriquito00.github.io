@@ -1,0 +1,118 @@
+@media (max-width: 800px) {
+  .navbar-container,
+  .main-content,
+  .footer-container {
+    width: min(100% - 2rem, 680px);
+  }
+  .mobile-menu-toggle {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .standalone-theme-toggle {
+    position: absolute;
+    right: 3.8rem;
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+  }
+  .language-select-wrapper {
+    position: absolute;
+    right: 7.1rem;
+  }
+  .mobile-menu-toggle::after {
+    content: "â˜°";
+  }
+  .mobile-menu-toggle > * {
+    display: none;
+  }
+  .navbar-links {
+    position: absolute;
+    top: 4.7rem;
+    left: 1rem;
+    right: 1rem;
+    display: none;
+    padding: var(--s-2);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  .navbar-links-open {
+    display: grid;
+    gap: 0;
+  }
+  .nav-link-button {
+    width: 100%;
+    padding: 0.7rem;
+    text-align: left;
+  }
+  .theme-toggle-wrapper {
+    padding: 0.2rem 0.7rem 0.5rem;
+  }
+  .hero-section {
+    padding-top: 8rem;
+  }
+  .hero-container,
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--s-6);
+  }
+  .hero-name {
+    max-width: 10ch;
+  }
+  .hero-visual {
+    justify-items: stretch;
+  }
+  .code-window {
+    width: 100%;
+    transform: none;
+  }
+  .code-window pre {
+    min-height: auto;
+  }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-main {
+    display: grid;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: var(--s-5);
+  }
+  .footer-simple {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-simple-links {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-actions {
+    display: grid;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+  .skills-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    min-height: 19rem;
+  }
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .modal-content {
+    padding: var(--s-4);
+  }
+}
+
