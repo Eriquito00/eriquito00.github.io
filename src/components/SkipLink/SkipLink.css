@@ -1,0 +1,16 @@
+/* SkipLink Component Styles */
+
+.skip-link {
+  position: fixed;
+  left: var(--s-3);
+  top: -4rem;
+  z-index: 20;
+  padding: var(--s-2) var(--s-3);
+  background: var(--accent);
+  color: var(--base);
+  font: 500 0.75rem/1 var(--mono);
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: var(--s-3);
+}

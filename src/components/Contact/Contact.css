@@ -1,0 +1,119 @@
+/* Contact Component Styles */
+
+.contact-section {
+  padding: var(--s-8) 0;
+  border-top: 1px solid var(--line);
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 0.65fr;
+  gap: var(--s-8);
+  padding: var(--s-6);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  align-items: end;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.contact-info > * {
+  margin-block: 0;
+}
+.contact-identity {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.contact-identity .contact-kicker {
+  margin: 0 0 0.3rem;
+}
+.contact-identity .contact-role {
+  margin: 0;
+}
+.contact-monogram {
+  display: grid;
+  width: 3.4rem;
+  height: 3.4rem;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font: 600 0.8rem var(--mono);
+}
+.contact-location {
+  color: var(--faint);
+  font: 0.68rem var(--mono);
+}
+.contact-info-title {
+  max-width: 17ch;
+}
+.contact-role {
+  margin: 0 0 var(--s-3);
+  color: var(--muted);
+  font: 0.72rem var(--mono);
+}
+.contact-slogan {
+  max-width: 30ch;
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  letter-spacing: -0.04em;
+}
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0;
+}
+.contact-link {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font: 600 0.8rem var(--mono);
+}
+.contact-link:hover {
+  background: var(--accent);
+  color: var(--base);
+}
+.contact-side {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: var(--s-5);
+  border-left: 1px solid var(--line);
+  color: var(--muted);
+}
+.contact-side strong {
+  margin-top: var(--s-2);
+  color: var(--ink);
+  font: 600 0.9rem var(--display);
+}
+.contact-side p {
+  max-width: 24ch;
+  margin: 0.5rem 0 0;
+  font: 0.72rem/1.7 var(--mono);
+}
+.status-dot {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: #73d3ad;
+  box-shadow: 0 0 0 0.2rem rgba(115, 211, 173, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .contact-content {
+    padding: var(--s-4);
+  }
+}
