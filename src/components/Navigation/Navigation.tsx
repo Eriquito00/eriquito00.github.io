@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Theme } from '../../types/portfolio';
 import { useLanguage } from '../../i18n/useLanguage';
-import { MobileMenu } from './MobileMenu';
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageSelect } from './LanguageSelect';
 import './Navigation.css';
@@ -66,29 +65,31 @@ export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
           <span className="hamburger-line"></span>
         </button>
 
-        <ThemeToggle theme={theme} toggleTheme={toggleTheme} standalone />
-
-        <LanguageSelect />
-
-        <ul className={`navbar-links ${isMobileMenuOpen ? 'navbar-links-open' : ''}`} role="menubar">
-          {sections.map((section) => (
-            <li key={section.id} className="navbar-link" role="none">
-              <button
-                onClick={() => scrollToSection(section.id)}
-                className="nav-link-button"
-                role="menuitem"
-                aria-label={`Ir a ${section.label}`}
-              >
-                {section.label}
-              </button>
-            </li>
-          ))}
-          <li className="theme-toggle-wrapper" role="none">
+        <div className={`navbar-center ${isMobileMenuOpen ? 'open' : ''}`} role="menubar">
+          <ul className="navbar-links" role="menubar">
+            {sections.map((section) => (
+              <li key={section.id} className="navbar-link" role="none">
+                <button
+                  onClick={() => scrollToSection(section.id)}
+                  className="nav-link-button"
+                  role="menuitem"
+                  aria-label={`Ir a ${section.label}`}
+                >
+                  {section.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div className="theme-toggle-wrapper" role="none">
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-          </li>
-        </ul>
+          </div>
+          <LanguageSelect />
+        </div>
 
-        <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} theme={theme} toggleTheme={toggleTheme} />
+        <div className="navbar-actions">
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} standalone />
+          <LanguageSelect />
+        </div>
       </div>
     </nav>
   );

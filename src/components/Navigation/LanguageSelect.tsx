@@ -6,16 +6,15 @@ interface LanguageSelectProps {
 }
 
 export const LanguageSelect = ({ className = '' }: LanguageSelectProps) => {
-  const { language, setLanguage, t } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   return (
     <label className={`language-select-wrapper ${className}`}>
-      <span className="visually-hidden">{t.navigation.languageLabel}</span>
       <select
         className="language-select"
         value={language}
         onChange={(event) => setLanguage(event.target.value as Language)}
-        aria-label={t.navigation.languageLabel}
+        aria-label="Idioma"
       >
         <option value="es">ES</option>
         <option value="ca">CA</option>
