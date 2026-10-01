@@ -107,3 +107,30 @@
 .modal-link:hover {
   background: var(--accent-soft);
 }
+
+/* Responsive */
+@media (max-width: 520px) {
+  .project-modal-overlay {
+    padding: var(--s-2);
+  }
+  .project-modal {
+    width: 100%;
+    max-height: 95svh;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .modal-content {
+    padding: var(--s-4);
+  }
+  .modal-title {
+    font-size: 2rem;
+  }
+  .modal-footer {
+    padding: var(--s-3) var(--s-4);
+  }
+  .modal-link {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}

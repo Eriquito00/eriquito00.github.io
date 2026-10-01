@@ -6,10 +6,17 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: var(--s-4);
+  margin-bottom: var(--s-4);
 }
 .filter-button {
   background: transparent;
   cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font: 600 0.68rem var(--mono);
+  transition: border-color var(--fast), background-color var(--fast), color var(--fast);
 }
 .filter-button:hover,
 .filter-button.active {
@@ -19,6 +26,7 @@
 }
 .filter-count {
   color: var(--faint);
+  margin-left: var(--s-2);
 }
 .projects-grid {
   display: grid;
@@ -43,45 +51,6 @@
   border-color: var(--accent);
   box-shadow: var(--shadow);
 }
-.project-image-wrapper {
-  position: relative;
-  height: 8rem;
-  overflow: hidden;
-  background: var(--surface-2);
-}
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.45;
-  filter: saturate(0.4);
-  mix-blend-mode: multiply;
-}
-[data-theme="dark"] .project-image {
-  mix-blend-mode: screen;
-  opacity: 0.3;
-}
-.project-overlay {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(23, 107, 82, 0.72);
-  color: white;
-  font: 0.7rem var(--mono);
-  opacity: 0;
-  transition: opacity var(--fast);
-}
-.project-card:hover .project-overlay {
-  opacity: 1;
-}
-.project-info {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: var(--s-3);
-}
-.project-meta,
 .project-footer {
   display: flex;
   align-items: center;
@@ -132,13 +101,6 @@
 .project-link:hover {
   background: var(--accent-soft);
 }
-.no-projects {
-  padding: var(--s-6);
-  border: 1px dashed var(--line);
-  color: var(--muted);
-  text-align: center;
-}
-
 /* Refinements */
 .project-card {
   position: relative;
@@ -196,4 +158,41 @@
 }
 .project-link:hover {
   transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-card {
+    min-height: 19rem;
+  }
+  .project-card-featured {
+    min-height: 19rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    min-height: auto;
+  }
+  .project-card-featured {
+    min-height: auto;
+  }
+  .project-name {
+    font-size: 1.3rem;
+  }
+  .project-description {
+    max-width: none;
+  }
 }

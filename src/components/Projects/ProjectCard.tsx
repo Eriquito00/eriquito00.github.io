@@ -10,7 +10,7 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
   const { t } = useLanguage();
 
-  const handleKeyDown = (event: KeyboardEvent<HTMLArticleElement>) => {
+  const handleKeyDown = (event: KeyboardEvent<HTMLElement>) => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
       onOpen(project);

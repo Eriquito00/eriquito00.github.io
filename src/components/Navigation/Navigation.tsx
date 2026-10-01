@@ -80,10 +80,6 @@ export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
               </li>
             ))}
           </ul>
-          <div className="theme-toggle-wrapper" role="none">
-            <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
-          </div>
-          <LanguageSelect />
         </div>
 
         <div className="navbar-actions">

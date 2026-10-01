@@ -1,4 +1,3 @@
-import { useLanguage } from '../../i18n/useLanguage';
 import type { Certificate } from '../../types/portfolio';
 
 interface CertificateCardProps {
@@ -7,8 +6,6 @@ interface CertificateCardProps {
 }
 
 export const CertificateCard = ({ certificate, onOpen }: CertificateCardProps) => {
-  const { t } = useLanguage();
-
   return (
     <button className="certificate-card" onClick={() => onOpen(certificate)}>
       <span className="certificate-mark">PDF</span>

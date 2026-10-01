@@ -1,8 +1,8 @@
 import { useLanguage } from '../../i18n/useLanguage';
-import type { EducationItem } from '../../types/portfolio';
+import type { EducationItem as EducationItemData } from '../../types/portfolio';
 
 interface EducationItemProps {
-  item: EducationItem;
+  item: EducationItemData;
 }
 
 export const EducationItem = ({ item }: EducationItemProps) => {

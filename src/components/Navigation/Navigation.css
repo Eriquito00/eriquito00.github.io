@@ -68,6 +68,12 @@
   font: 500 0.75rem var(--mono);
   padding: 0;
 }
+.nav-link-button:focus-visible,
+.brand-button:focus-visible,
+.mobile-menu-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
 .nav-link-button:hover {
   color: var(--ink);
 }
@@ -136,15 +142,18 @@
   align-items: center;
 }
 .language-select {
-  min-height: 2.75rem;
-  padding: 0 0.65rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--surface);
   color: var(--ink);
-  font: 600 0.68rem var(--mono);
+  font: 600 0.75rem var(--mono);
   cursor: pointer;
   appearance: none;
+  min-width: 7rem;
+  text-align: center;
+  text-align-last: center;
 }
 .language-select:hover,
 .language-select:focus-visible {
@@ -154,15 +163,21 @@
 .language-select option {
   background: var(--surface);
   color: var(--ink);
+  padding: 0.5rem 1rem;
 }
 
-/* Standalone theme toggle (mobile) */
+/* Theme toggle in the navigation actions */
 .standalone-theme-toggle {
-  display: none;
+  display: flex;
 }
 .mobile-menu-toggle {
   display: none;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: 0;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
 }
 
 /* Mobile Menu */
@@ -187,9 +202,17 @@
   .footer-container {
     width: min(100% - 2rem, 680px);
   }
+  .navbar-container {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    display: grid;
+    gap: var(--s-2);
+  }
+  .navbar-brand {
+    min-width: 0;
+  }
   .navbar-center {
     position: absolute;
-    top: 4.7rem;
+    top: calc(100% + 0.5rem);
     left: 1rem;
     right: 1rem;
     display: none;
@@ -225,26 +248,22 @@
   .mobile-menu-toggle > * {
     display: none;
   }
-  .standalone-theme-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.75rem;
-    height: 2.75rem;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    background: var(--surface);
-    color: var(--ink);
-    z-index: 20;
-  }
   .language-select-wrapper {
-    /* In mobile, language select goes inside the mobile menu */
+    display: flex;
+    justify-content: center;
   }
   .navbar-actions {
-    position: absolute;
-    top: 0.6rem;
-    right: 0.6rem;
-    z-index: 20;
+    position: static;
     gap: var(--s-2);
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-container {
+    width: calc(100% - 1.5rem);
+  }
+  .language-select {
+    min-width: 4.25rem;
+    padding-inline: 0.5rem;
   }
 }

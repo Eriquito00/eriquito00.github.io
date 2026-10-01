@@ -1,30 +1,32 @@
 import type { Theme } from '../../types/portfolio';
-import sunIcon from '../../assets/sun.svg?react';
-import moonIcon from '../../assets/moon.svg?react';
+import { useLanguage } from '../../i18n/useLanguage';
+import sunIcon from '../../assets/sun.svg';
+import moonIcon from '../../assets/moon.svg';
 
 interface ThemeToggleProps {
   theme: Theme;
-  onToggle: () => void;
+  toggleTheme: () => void;
   standalone?: boolean;
   className?: string;
 }
 
-export const ThemeToggle = ({ theme, onToggle, standalone = false, className = '' }: ThemeToggleProps) => {
-  const label = `Cambiar a modo ${theme === 'light' ? 'oscuro' : 'claro'}`;
+export const ThemeToggle = ({ theme, toggleTheme, standalone = false, className = '' }: ThemeToggleProps) => {
+  const { t } = useLanguage();
+  const label = theme === 'light' ? t.navigation.themeToDark : t.navigation.themeToLight;
 
   return (
     <button
-      onClick={onToggle}
+      onClick={toggleTheme}
       className={`theme-toggle ${standalone ? 'standalone-theme-toggle' : ''} ${className}`}
       aria-label={label}
       title={label}
       data-theme={theme}
     >
       <span className="theme-icon sun">
-        <sunIcon />
+        <img src={sunIcon} alt="" />
       </span>
       <span className="theme-icon moon">
-        <moonIcon />
+        <img src={moonIcon} alt="" />
       </span>
     </button>
   );

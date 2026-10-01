@@ -64,3 +64,45 @@
   color: var(--accent);
   font-size: 1.1rem;
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .certificate-card {
+    min-height: 5rem;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--s-2);
+  }
+  .certificate-copy {
+    text-align: center;
+  }
+  .certificate-arrow {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+  .certificate-card {
+    flex-direction: row;
+    text-align: left;
+    gap: var(--s-3);
+  }
+  .certificate-copy {
+    text-align: left;
+  }
+  .certificate-arrow {
+    margin-left: auto;
+  }
+}

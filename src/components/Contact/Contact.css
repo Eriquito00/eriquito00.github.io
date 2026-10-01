@@ -107,13 +107,30 @@
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .contact-content {
     grid-template-columns: 1fr;
+    gap: var(--s-6);
+  }
+  .contact-side {
+    border-left: none;
+    border-top: 1px solid var(--line);
+    padding-left: 0;
+    padding-top: var(--s-4);
   }
 }
+
 @media (max-width: 520px) {
   .contact-content {
     padding: var(--s-4);
+  }
+  .contact-slogan {
+    max-width: none;
+    font-size: clamp(1.1rem, 4vw, 1.8rem);
+  }
+  .contact-link {
+    flex: 1 1 45%;
+    justify-content: center;
+    text-align: center;
   }
 }

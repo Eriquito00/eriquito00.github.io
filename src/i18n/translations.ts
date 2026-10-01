@@ -37,7 +37,7 @@ const spanish: TranslationDictionary = {
       pianoman: { description: 'Práctica interactiva de eventos de teclado, ratón y táctil en TypeScript.', fullDescription: 'Pequeño proyecto experimental para probar eventos de teclado, ratón y touch en una interfaz web interactiva.' }
     }
   },
-  certificates: { title: 'Certificados', subtitle: 'Formación que acompaña el código.', credential: 'credential / pdf', download: 'Descargar PDF', filters: { all: 'Todos', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
+  certificates: { title: 'Certificados', credential: 'credential / pdf', download: 'Descargar PDF', filters: { all: 'Todos', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
   contact: { title: 'Contacto', role: 'Desarrollador web junior · IA y Big Data', location: 'España · disponible presencial, híbrido o remoto', slogan: 'Código abierto, conversación directa.', availability: 'Disponible para conversar', availabilityDetail: 'Sobre desarrollo web, producto, inteligencia artificial y datos.' },
   footer: { copyright: 'React + TypeScript.' },
   seo: { title: 'Eric Mejias Gamonal - Portfolio Desarrollador Web', description: 'Portfolio de Eric Mejias Gamonal, desarrollador web junior interesado en IA y Big Data.' }
@@ -80,7 +80,7 @@ const catalan: TranslationDictionary = {
       pianoman: { description: 'Pràctica interactiva d’esdeveniments de teclat, ratolí i tàctil amb TypeScript.', fullDescription: 'Petit projecte experimental per provar esdeveniments de teclat, ratolí i tàctils en una interfície web interactiva.' }
     }
   },
-  certificates: { title: 'Certificats', subtitle: 'Formació que acompanya el codi.', credential: 'credencial / pdf', download: 'Descarregar PDF', filters: { all: 'Tots', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
+  certificates: { title: 'Certificats', credential: 'credencial / pdf', download: 'Descarregar PDF', filters: { all: 'Tots', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
   contact: { title: 'Contacte', role: 'Desenvolupador web junior · IA i Big Data', location: 'Espanya · disponibilitat presencial, híbrida o remota', slogan: 'Codi obert, conversa directa.', availability: 'Disponible per conversar', availabilityDetail: 'Sobre desenvolupament web, producte, intel·ligència artificial i dades.' },
   footer: { copyright: 'React + TypeScript.' },
   seo: { title: 'Eric Mejias Gamonal - Portfolio de Desenvolupador Web', description: 'Portfolio d’Eric Mejias Gamonal, desenvolupador web junior interessat en IA i Big Data.' }
@@ -123,7 +123,7 @@ const english: TranslationDictionary = {
       pianoman: { description: 'Interactive TypeScript practice for keyboard, mouse and touch events.', fullDescription: 'Small experimental project for testing keyboard, mouse and touch events in an interactive web interface.' }
     }
   },
-  certificates: { title: 'Certificates', subtitle: 'Training that supports the code.', credential: 'credential / pdf', download: 'Download PDF', filters: { all: 'All', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
+  certificates: { title: 'Certificates', credential: 'credential / pdf', download: 'Download PDF', filters: { all: 'All', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
   contact: { title: 'Contact', role: 'Junior web developer · AI & Big Data', location: 'Spain · on-site, hybrid or remote availability', slogan: 'Open source, direct conversation.', availability: 'Open to conversations', availabilityDetail: 'About web development, product, artificial intelligence and data.' },
   footer: { copyright: 'React + TypeScript.' },
   seo: { title: 'Eric Mejias Gamonal - Web Developer Portfolio', description: 'Portfolio of Eric Mejias Gamonal, a junior web developer interested in AI and Big Data.' }

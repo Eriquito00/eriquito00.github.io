@@ -156,16 +156,7 @@
   }
 }
 
-/* Refinements */
-.hero-section {
-  min-height: auto;
-  padding-top: 7.5rem;
-  padding-bottom: 6rem;
-}
-.hero-actions {
-  flex-wrap: wrap;
-  align-items: center;
-}
+/* Refinements for other sections */
 .section-heading-row {
   display: flex;
   align-items: end;

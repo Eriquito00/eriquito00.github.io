@@ -10,7 +10,6 @@ export interface Project {
   description: string;
   fullDescription: string;
   tags: string[];
-  githubUrl: string;
   repoUrl: string;
   liveUrl?: string;
   featured?: boolean;

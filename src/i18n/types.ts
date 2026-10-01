@@ -63,7 +63,6 @@ export interface TranslationDictionary {
   };
   certificates: {
     title: string;
-    subtitle: string;
     filters: Record<string, string>;
     credential: string;
     download: string;

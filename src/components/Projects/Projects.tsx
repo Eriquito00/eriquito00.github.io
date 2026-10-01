@@ -30,6 +30,7 @@ export const Projects = ({ setActiveProject }: ProjectsProps) => {
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
                 className={`filter-button ${activeFilter === category.id ? 'active' : ''}`}
+                aria-pressed={activeFilter === category.id}
               >
                 {t.projects.filters[category.id]}
                 <span className="filter-count">

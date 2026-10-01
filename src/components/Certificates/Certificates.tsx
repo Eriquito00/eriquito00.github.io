@@ -21,16 +21,16 @@ export const Certificates = ({ setActiveCertificate }: CertificatesProps) => {
       <div className="section-heading-row">
         <h2 id="certificates-title" className="section-title">{t.certificates.title}</h2>
       </div>
-      <p className="section-aside certificate-subtitle">{t.certificates.subtitle}</p>
       <div className="certificate-filters" aria-label="Filtrar certificados">
         {certificateFilters.map((filter) => (
           <button
             key={filter.id}
             className={`filter-button ${activeFilter === filter.id ? 'active' : ''}`}
             onClick={() => setActiveFilter(filter.id)}
+            aria-pressed={activeFilter === filter.id}
           >
             {t.certificates.filters[filter.id]}
-            <span>
+            <span className="filter-count">
               {filter.id === 'all'
                 ? certificates.length
                 : certificates.filter((c) => (c.filter || 'generalitat') === filter.id).length}

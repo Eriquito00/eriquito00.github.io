@@ -10,7 +10,6 @@ export const projects: Project[] = [
     description: 'Red social full stack para descubrir y recomendar anime, con una experiencia de producto completa y publicada.',
     fullDescription: 'Proyecto principal: una red social para descubrir, organizar y recomendar anime. Combina React, TypeScript y Tailwind en el frontend con Node.js, Express y una capa de datos relacional. El proyecto está publicado y reúne autenticación, perfiles, recomendaciones y una experiencia guiada por la comunidad.',
     tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Supabase'],
-    githubUrl: 'https://github.com/Rekko-Lists',
     repoUrl: 'https://github.com/Eriquito00/Rekko',
     liveUrl: 'https://rekko-lists.web.app',
   },
@@ -22,7 +21,6 @@ export const projects: Project[] = [
     description: 'Prototipo PHP de una plataforma de recomendaciones de anime.',
     fullDescription: 'Exploración backend de Rekko con PHP, JavaScript y AJAX. El repositorio trabaja autenticación, comunicación cliente-servidor y organización de una aplicación web orientada a recomendaciones.',
     tags: ['PHP', 'JavaScript', 'AJAX', 'OAuth2', 'JWT'],
-    githubUrl: 'https://github.com/Eriquito00/RekkoPHP',
     repoUrl: 'https://github.com/Eriquito00/RekkoPHP',
   },
   {
@@ -33,7 +31,6 @@ export const projects: Project[] = [
     description: 'Artículos de astronomía desde la API REST de Wikipedia con persistencia y paginación.',
     fullDescription: 'Aplicación PHP que consume la API REST de Wikipedia, guarda el contenido en MySQL y lo presenta con paginación. Es un ejercicio práctico de integración de APIs, persistencia y navegación de datos.',
     tags: ['PHP', 'MySQL', 'REST API', 'Pagination'],
-    githubUrl: 'https://github.com/Eriquito00/AstronomyArticlesPHP',
     repoUrl: 'https://github.com/Eriquito00/AstronomyArticlesPHP',
   },
   {
@@ -44,7 +41,6 @@ export const projects: Project[] = [
     description: 'Consultas geográficas en lenguaje natural visualizadas sobre un mapa.',
     fullDescription: 'Aplicación que interpreta consultas en lenguaje natural sobre lugares geográficos y muestra los resultados en un mapa interactivo. Es uno de los proyectos que conecta de forma más directa el desarrollo web con la inteligencia artificial.',
     tags: ['TypeScript', 'AI', 'Maps', 'NLP'],
-    githubUrl: 'https://github.com/Eriquito00/GeoQueryAI',
     repoUrl: 'https://github.com/Eriquito00/GeoQueryAI',
   },
   {
@@ -55,7 +51,6 @@ export const projects: Project[] = [
     description: 'Implementación del juego Uno con TypeScript, Node.js y WebSockets.',
     fullDescription: 'Juego multijugador en tiempo real que utiliza WebSockets para sincronizar partidas y salas. El proyecto pone el foco en la comunicación cliente-servidor y en modelar la lógica de un juego completo.',
     tags: ['TypeScript', 'Node.js', 'WebSockets'],
-    githubUrl: 'https://github.com/Eriquito00/Primero',
     repoUrl: 'https://github.com/Eriquito00/Primero',
   },
   {
@@ -66,7 +61,6 @@ export const projects: Project[] = [
     description: 'Repositorio de apuntes de Inteligencia Artificial y Big Data.',
     fullDescription: 'Repositorio académico para organizar apuntes, ejercicios y material de estudio de la especialización en Inteligencia Artificial y Big Data.',
     tags: ['AI', 'Big Data', 'Notes'],
-    githubUrl: 'https://github.com/Eriquito00/IABD-Notes',
     repoUrl: 'https://github.com/Eriquito00/IABD-Notes',
   },
   {
@@ -77,7 +71,6 @@ export const projects: Project[] = [
     description: 'Repositorio de apuntes y referencias de desarrollo web.',
     fullDescription: 'Repositorio personal para reunir apuntes, referencias y material de consulta relacionado con el desarrollo web.',
     tags: ['Web development', 'Notes', 'Learning'],
-    githubUrl: 'https://github.com/Eriquito00/Webdev-Notes',
     repoUrl: 'https://github.com/Eriquito00/Webdev-Notes',
   },
   {
@@ -88,7 +81,6 @@ export const projects: Project[] = [
     description: 'Aplicación de gestión de escalada con Java, MySQL y JDBC.',
     fullDescription: 'Proyecto colaborativo de gestión de escalada con persistencia en MySQL mediante JDBC. El CV también recoge el uso de Maven, Docker y OAuth2 en el entorno técnico del proyecto.',
     tags: ['Java', 'MySQL', 'JDBC', 'Docker', 'OAuth2'],
-    githubUrl: 'https://github.com/Eriquito00/ProyectoAplicacionEscalada',
     repoUrl: 'https://github.com/Eriquito00/ProyectoAplicacionEscalada',
   },
   {
@@ -99,7 +91,6 @@ export const projects: Project[] = [
     description: 'Base de datos MySQL construida a partir de datos de PokeAPI.',
     fullDescription: 'Proyecto colaborativo de integración y gestión de datos: obtiene información de PokeAPI, la modela en MySQL y permite trabajar con consultas sobre el conjunto de datos.',
     tags: ['MySQL', 'Java', 'PokeAPI', 'Data'],
-    githubUrl: 'https://github.com/Eriquito00/Atacando_PokeAPI',
     repoUrl: 'https://github.com/Eriquito00/Atacando_PokeAPI',
   },
   {
@@ -110,7 +101,6 @@ export const projects: Project[] = [
     description: 'Lógica de gestión de productos para un supermercado ficticio.',
     fullDescription: 'Proyecto Java centrado en colecciones, programación orientada a objetos y manejo de excepciones para resolver un caso de gestión de productos desde terminal.',
     tags: ['Java', 'OOP', 'Collections', 'Exceptions'],
-    githubUrl: 'https://github.com/Eriquito00/Collections_Exceptions_JAVA',
     repoUrl: 'https://github.com/Eriquito00/Collections_Exceptions_JAVA',
   },
   {
@@ -121,7 +111,6 @@ export const projects: Project[] = [
     description: 'Cliente Java para consumir MyAnimeList con OAuth2 y JWT.',
     fullDescription: 'Aplicación Java orientada a consumir la API oficial de MyAnimeList mediante OAuth2 y tokens JWT, con foco en autenticación y consumo de APIs externas.',
     tags: ['Java', 'OAuth2', 'JWT', 'REST'],
-    githubUrl: 'https://github.com/WysperOtaku/MyAnimeListAPIConsuming',
     repoUrl: 'https://github.com/WysperOtaku/MyAnimeListAPIConsuming',
   },
   {
@@ -132,7 +121,6 @@ export const projects: Project[] = [
     description: 'Práctica interactiva de eventos de teclado, ratón y táctil en TypeScript.',
     fullDescription: 'Pequeño proyecto experimental para probar eventos de teclado, ratón y touch en una interfaz web interactiva.',
     tags: ['TypeScript', 'Events', 'Interactive'],
-    githubUrl: 'https://github.com/Eriquito00/PianoMan',
     repoUrl: 'https://github.com/Eriquito00/PianoMan',
   },
 ];

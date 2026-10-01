@@ -1,15 +1,15 @@
 import { useLanguage } from '../../i18n/useLanguage';
-import type { SkillCategory } from '../../types/portfolio';
+import type { SkillCategory as SkillCategoryData } from '../../types/portfolio';
 
 interface SkillCategoryProps {
-  category: SkillCategory;
+  category: SkillCategoryData;
 }
 
 export const SkillCategory = ({ category }: SkillCategoryProps) => {
   const { t } = useLanguage();
 
   return (
-    <div className="skill-category" data-aos="fade-up" data-aos-delay="100">
+    <div className="skill-category">
       <div className="category-header">
         <div className="category-icon">
           <span>{category.icon}</span>

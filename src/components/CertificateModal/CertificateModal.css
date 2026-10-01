@@ -68,6 +68,12 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .certificate-modal {
+    width: calc(100vw - 2rem);
+  }
+}
+
 @media (max-width: 800px) {
   .certificate-modal {
     grid-template-columns: 1fr;
@@ -80,5 +86,24 @@
   }
   .certificate-modal-copy {
     padding: var(--s-4);
+  }
+}
+
+@media (max-width: 520px) {
+  .certificate-modal {
+    width: 100vw;
+    height: 100svh;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+  .certificate-viewer {
+    height: 50svh;
+  }
+  .certificate-modal-copy {
+    padding: var(--s-3);
+  }
+  .certificate-modal-copy h2 {
+    font-size: 1.75rem;
   }
 }
