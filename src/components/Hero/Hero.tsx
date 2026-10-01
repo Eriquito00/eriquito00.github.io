@@ -55,7 +55,7 @@ const Hero = () => {
             </a>
           </div>
         </div>
-
+        
         <div className="hero-visual" aria-label="Resumen del stack de Eric">
           <div className="code-window">
             <div className="code-window-bar">

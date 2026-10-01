@@ -197,6 +197,11 @@
 
 /* Responsive */
 @media (max-width: 800px) {
+  .navbar {
+    background: color-mix(in srgb, var(--base) 94%, transparent);
+    border-color: var(--line);
+    backdrop-filter: blur(14px);
+  }
   .navbar-container,
   .main-content,
   .footer-container {

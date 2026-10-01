@@ -12,9 +12,15 @@
 }
 .hero-container {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
+  grid-template-columns: 1fr;
   gap: var(--s-8);
   align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .hero-container {
+    grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
+  }
 }
 .eyebrow,
 .contact-kicker {
