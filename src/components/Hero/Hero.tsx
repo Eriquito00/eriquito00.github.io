@@ -1,16 +1,9 @@
 import { useLanguage } from '../../i18n/useLanguage';
+import AINetworkGraph from './AINetworkGraph';
 import './Hero.css';
 
 const Hero = () => {
   const { t } = useLanguage();
-  const profile = {
-    name: 'Eric Mejias Gamonal',
-    role: t.hero.role,
-    now: t.hero.profileNow,
-    next: t.hero.profileNext,
-    interests: t.hero.profileInterests,
-    status: t.hero.profileStatus,
-  };
 
   return (
     <section id="hero" className="hero-section" aria-labelledby="hero-title">
@@ -56,18 +49,8 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="hero-visual" aria-label="Resumen del stack de Eric">
-          <div className="code-window">
-            <div className="code-window-bar">
-              <span></span><span></span><span></span><code>profile.json</code>
-            </div>
-            <pre>
-              <code>{JSON.stringify(profile, null, 2)}</code>
-            </pre>
-            <div className="code-window-footer">
-              <span className="status-dot"></span> {t.hero.status}
-            </div>
-          </div>
+        <div className="hero-visual">
+          <AINetworkGraph />
         </div>
       </div>
     </section>

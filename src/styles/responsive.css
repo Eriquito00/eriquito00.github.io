@@ -29,12 +29,9 @@
   .hero-visual {
     justify-items: stretch;
   }
-  .code-window {
+  .ai-network-graph {
     width: 100%;
     transform: none;
-  }
-  .code-window pre {
-    min-height: auto;
   }
   .skills-grid,
   .projects-grid,
