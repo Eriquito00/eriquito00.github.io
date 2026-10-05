@@ -47,10 +47,27 @@ export const certificates: Certificate[] = [
     file: '/docs/Título Word.pdf',
     description: 'Acreditación de formación en Microsoft Word.',
   },
+  {
+    id: 'erasmus+',
+    title: 'Erasmus+',
+    issuer: 'Sa Palomera',
+    filter: 'sapalomera',
+    file: '/docs/Erasmus+.pdf',
+    description: 'Certificado de participación en el programa Erasmus+.',
+  },
+  {
+    id: 'honorific',
+    title: 'Mencion Honorífica',
+    issuer: 'Sa Palomera',
+    filter: 'sapalomera',
+    file: '/docs/Menció honorífica.pdf',
+    description: 'Mención honorífica por el esfuerzo y dedicación en el Grado Medio de Sistemas Microinformáticos y Redes.',
+  }
 ];
 
 export const certificateFilters: Array<{ id: 'all' | CertificateFilter; label: string }> = [
   { id: 'all', label: 'Todos' },
   { id: 'generalitat', label: 'Generalitat' },
   { id: 'microsoft', label: 'Microsoft' },
+  { id: 'sapalomera', label: 'Sa palomera' },
 ];

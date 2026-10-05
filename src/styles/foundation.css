@@ -51,6 +51,34 @@ html {
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
+  scrollbar-width: auto;
+  scrollbar-color: var(--section-line) transparent;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--section-line) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 0.2rem solid transparent;
+  border-radius: 999px;
+  background: var(--section-line);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--ink);
+  background-clip: padding-box;
 }
 
 *,

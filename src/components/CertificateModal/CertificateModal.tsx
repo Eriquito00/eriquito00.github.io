@@ -34,6 +34,12 @@ export const CertificateModal = ({ certificate, onClose }: CertificateModalProps
         <button className="modal-close" onClick={onClose} aria-label={t.navigation.close}>
           ×
         </button>
+        <iframe
+          className="certificate-viewer"
+          src={`${certificate.file}#toolbar=0&navpanes=0`}
+          title={`Vista previa de ${certificate.title}`}
+        />
+        
         <div className="certificate-modal-copy">
           <p className="eyebrow">{t.certificates.credential}</p>
           <h2 id="certificate-modal-title">{certificate.title}</h2>
@@ -43,11 +49,6 @@ export const CertificateModal = ({ certificate, onClose }: CertificateModalProps
             {t.certificates.download} <span>↓</span>
           </a>
         </div>
-        <iframe
-          className="certificate-viewer"
-          src={`${certificate.file}#toolbar=0&navpanes=0`}
-          title={`Vista previa de ${certificate.title}`}
-        />
       </div>
     </div>
   );

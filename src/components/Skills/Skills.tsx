@@ -12,7 +12,6 @@ export const Skills = () => {
       <div className="skills-container">
         <div className="skills-header">
           <h2 id="skills-title" className="skills-title">{t.skills.title}</h2>
-          <p className="skills-subtitle">{t.skills.subtitle}</p>
         </div>
         <div className="skills-grid">
           {skillCategories.map((category: SkillCategoryType) => (

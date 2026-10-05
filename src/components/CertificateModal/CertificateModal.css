@@ -16,6 +16,7 @@
   height: min(760px, calc(100svh - 2rem));
   overflow: hidden;
   position: relative;
+  padding: var(--s-2);
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -91,6 +92,7 @@
     width: calc(100vw - 1rem);
     height: calc(100svh - 1rem);
     overflow: auto;
+    padding: var(--s-1);
   }
   .certificate-viewer {
     height: 58svh;
@@ -104,6 +106,7 @@
   .certificate-modal {
     width: calc(100vw - var(--s-4));
     height: calc(100svh - var(--s-4));
+    padding: var(--s-1);
     border-radius: var(--radius);
   }
   .certificate-viewer {

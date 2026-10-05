@@ -23,7 +23,6 @@ export const Projects = ({ setActiveProject }: ProjectsProps) => {
           <div className="section-heading-row">
             <h2 id="projects-title" className="section-title">{t.projects.title}</h2>
           </div>
-          <p className="projects-subtitle">{t.projects.subtitle}</p>
           <div className="projects-filters" aria-label="Filtrar proyectos">
             {projectCategories.map((category) => (
               <button

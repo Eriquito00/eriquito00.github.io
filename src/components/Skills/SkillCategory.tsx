@@ -11,9 +11,6 @@ export const SkillCategory = ({ category }: SkillCategoryProps) => {
   return (
     <div className="skill-category">
       <div className="category-header">
-        <div className="category-icon">
-          <span>{category.icon}</span>
-        </div>
         <h3 className="category-title">{t.skills.categories[category.id].title}</h3>
         <p className="category-description">{t.skills.categories[category.id].description}</p>
       </div>

@@ -18,6 +18,7 @@
   width: min(680px, 100%);
   max-height: min(760px, 90svh);
   overflow: auto;
+  padding: var(--s-2);
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -135,6 +136,7 @@
   .project-modal {
     width: calc(100% - var(--s-2));
     max-height: calc(100svh - var(--s-4));
+    padding: var(--s-1);
     border-radius: var(--radius);
   }
   .modal-content {

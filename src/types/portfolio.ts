@@ -16,7 +16,7 @@ export interface Project {
   featured?: boolean;
 }
 
-export type CertificateFilter = 'generalitat' | 'microsoft';
+export type CertificateFilter = 'generalitat' | 'microsoft' | 'sapalomera';
 
 export interface Certificate {
   id: string;
@@ -30,7 +30,6 @@ export interface Certificate {
 export interface SkillCategory {
   id: string;
   title: string;
-  icon: string;
   description: string;
   skills: string[];
 }

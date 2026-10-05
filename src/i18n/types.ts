@@ -48,12 +48,10 @@ export interface TranslationDictionary {
   };
   skills: {
     title: string;
-    subtitle: string;
     categories: Record<string, { title: string; description: string }>;
   };
   projects: {
     title: string;
-    subtitle: string;
     filters: Record<string, string>;
     details: string;
     repository: string;
