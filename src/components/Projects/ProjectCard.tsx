@@ -1,6 +1,10 @@
 import type { KeyboardEvent } from 'react';
 import type { Project } from '../../types/portfolio';
 import { useLanguage } from '../../i18n/useLanguage';
+import githubBlack from '../../assets/icons/github-black.webp';
+import githubWhite from '../../assets/icons/github-white.webp';
+import worldBlack from '../../assets/icons/world-black.svg';
+import worldWhite from '../../assets/icons/world-white.svg';
 
 interface ProjectCardProps {
   project: Project;
@@ -47,7 +51,8 @@ export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
             aria-label={`${t.projects.repository}: ${project.name}`}
             onClick={(event) => event.stopPropagation()}
           >
-            GH
+            <img className="icon icon-black" src={githubBlack} alt="" />
+            <img className="icon icon-white" src={githubWhite} alt="" />
           </a>
           {project.liveUrl && (
             <a
@@ -58,7 +63,8 @@ export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
               aria-label={`${t.projects.liveDemo}: ${project.name}`}
               onClick={(event) => event.stopPropagation()}
             >
-              LIVE
+              <img className="icon icon-black" src={worldBlack} alt="" />
+              <img className="icon icon-white" src={worldWhite} alt="" />
             </a>
           )}
         </div>

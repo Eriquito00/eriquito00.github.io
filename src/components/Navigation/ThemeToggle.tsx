@@ -1,7 +1,7 @@
 import type { Theme } from '../../types/portfolio';
 import { useLanguage } from '../../i18n/useLanguage';
-import sunIcon from '../../assets/sun.svg';
-import moonIcon from '../../assets/moon.svg';
+import sunIcon from '../../assets/icons/sun.svg';
+import moonIcon from '../../assets/icons/moon.svg';
 
 interface ThemeToggleProps {
   theme: Theme;

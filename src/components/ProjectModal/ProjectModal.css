@@ -59,6 +59,14 @@
   letter-spacing: -0.05em;
   overflow-wrap: anywhere;
 }
+.modal-project-image {
+  display: block;
+  width: 100%;
+  margin: var(--s-4) 0;
+  border: 1px solid var(--line);
+  border-radius: var(--control-radius);
+  object-fit: cover;
+}
 .modal-meta {
   display: flex;
   flex-wrap: wrap;

@@ -2,7 +2,6 @@ import { useLanguage } from '../../i18n/useLanguage';
 import './Footer.css';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
   const { t } = useLanguage();
 
   return (

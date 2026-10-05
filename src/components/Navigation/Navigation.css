@@ -68,7 +68,6 @@
   font: 500 0.75rem var(--mono);
   padding: 0;
   transition: color var(--normal) ease;
-
 }
 .nav-link-button:focus-visible,
 .brand-button:focus-visible,
@@ -77,6 +76,9 @@
   outline-offset: 3px;
 }
 .nav-link-button:hover {
+  color: var(--ink);
+}
+[data-theme="light"] .nav-link-button:hover {
   color: var(--ink);
 }
 

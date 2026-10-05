@@ -8,7 +8,7 @@ interface ProjectModalProps {
   onClose: () => void;
 }
 
-export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
+export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {  
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -37,6 +37,9 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         <div className="modal-content">
           <p className="eyebrow">{t.projects.filters[project.category]} / {project.year}</p>
           <h2 id="modal-title" className="modal-title">{project.name}</h2>
+          {project.image && (
+            <img className="modal-project-image" src={project.image} alt={`Captura de ${project.name}`} />
+          )}
           <p className="modal-description">{t.projects.copies[project.id].fullDescription}</p>
           <div className="modal-section">
             <h3 className="modal-section-title">{t.projects.stack}</h3>

@@ -1,9 +1,11 @@
 import type { Project, ProjectCategory } from '../../types/portfolio';
+import rekkoImage from '../../assets/projects/rekko.webp';
 
 export const projects: Project[] = [
   {
     id: 'rekko',
     name: 'Rekko',
+    image: rekkoImage,
     featured: true,
     category: 'fullstack',
     year: '2024',

@@ -5,6 +5,7 @@ export type ProjectCategory = 'fullstack' | 'frontend' | 'backend' | 'education'
 export interface Project {
   id: string;
   name: string;
+  image?: string;
   category: ProjectCategory;
   year: string;
   description: string;

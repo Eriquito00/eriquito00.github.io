@@ -168,6 +168,37 @@
   text-align: center;
   text-decoration: none;
 }
+.icon {
+  display: block;
+  flex: 0 0 auto;
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+}
+.icon-black {
+  display: none;
+}
+.icon-white {
+  display: block;
+}
+[data-theme="light"] .icon-black {
+  display: block;
+}
+[data-theme="light"] .icon-white {
+  display: none;
+}
+[data-theme="light"] .project-link:hover .icon-black {
+  display: none;
+}
+[data-theme="light"] .project-link:hover .icon-white {
+  display: block;
+}
+[data-theme="dark"] .project-link:hover .icon-black {
+  display: block;
+}
+[data-theme="dark"] .project-link:hover .icon-white {
+  display: none;
+}
 .project-link:hover {
   transform: translateY(-2px);
 }
