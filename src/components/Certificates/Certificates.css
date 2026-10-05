@@ -59,12 +59,6 @@
   color: var(--muted);
   font: 0.63rem var(--mono);
 }
-.certificate-arrow {
-  margin-left: auto;
-  color: var(--accent);
-  font-size: 1.1rem;
-}
-
 /* Responsive */
 @media (max-width: 1024px) {
   .certificate-grid {
@@ -85,12 +79,13 @@
   .certificate-copy {
     text-align: center;
   }
-  .certificate-arrow {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 520px) {
+  .certificates-section .section-heading-row {
+    align-items: flex-start;
+    text-align: left;
+  }
   .certificate-grid {
     grid-template-columns: 1fr;
   }
@@ -101,8 +96,5 @@
   }
   .certificate-copy {
     text-align: left;
-  }
-  .certificate-arrow {
-    margin-left: auto;
   }
 }

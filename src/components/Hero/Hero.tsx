@@ -28,7 +28,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t.hero.github} ↗
+              {t.hero.github}
             </a>
             <a
               className="hero-link-button"
@@ -36,7 +36,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t.hero.linkedin} ↗
+              {t.hero.linkedin}
             </a>
             <a
               className="hero-link-button"
@@ -44,7 +44,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {t.hero.cv} ↗
+              {t.hero.cv}
             </a>
           </div>
         </div>

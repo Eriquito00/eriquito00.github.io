@@ -27,6 +27,7 @@
 .footer-simple-links a {
   color: var(--muted);
   font: 0.68rem var(--mono);
+  text-decoration: none;
 }
 .footer-simple-links a:hover {
   color: var(--accent);

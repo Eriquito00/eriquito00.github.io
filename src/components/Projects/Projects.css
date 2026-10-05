@@ -1,5 +1,10 @@
 /* Projects Component Styles */
 
+.projects-section {
+  padding: var(--s-8) 0;
+  border-top: 1px solid var(--line);
+}
+
 /* Base styles */
 .projects-filters {
   display: flex;
@@ -9,14 +14,14 @@
   margin-bottom: var(--s-4);
 }
 .filter-button {
+  min-height: var(--control-height);
   background: transparent;
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--control-radius);
   color: var(--muted);
   font: 600 0.68rem var(--mono);
-  transition: border-color var(--fast), background-color var(--fast), color var(--fast);
 }
 .filter-button:hover,
 .filter-button.active {
@@ -145,16 +150,17 @@
   color: var(--accent);
   font: 600 0.68rem var(--mono);
 }
-.project-open span {
-  margin-left: 0.45rem;
-}
 .project-links {
   gap: 0.5rem;
 }
 .project-link {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: 50%;
+  border-radius: var(--control-radius);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 .project-link:hover {
   transform: translateY(-2px);
@@ -180,6 +186,10 @@
 }
 
 @media (max-width: 520px) {
+  .projects-header .section-heading-row {
+    align-items: flex-start;
+    text-align: left;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
   }

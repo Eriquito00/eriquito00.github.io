@@ -50,15 +50,45 @@ export const AINetworkGraph = () => {
       const height = parent.clientHeight;
       const accent = getCssColor('--accent', '#34d399');
       const ink = getCssColor('--ink', '#e7eee5');
+      context.font = '12px IBM Plex Mono, monospace';
 
       context.clearRect(0, 0, width, height);
 
       nodes.forEach((node) => {
         if (!prefersReducedMotion) {
-          node.x += node.vx;
-          node.y += node.vy;
-          if (node.x < 0.05 || node.x > 0.95) node.vx *= -1;
-          if (node.y < 0.08 || node.y > 0.92) node.vy *= -1;
+          const minX = 16 / width;
+          const maxX = Math.max(minX, (width - context.measureText(node.label).width - 12) / width);
+          const minY = 20 / height;
+          const maxY = Math.max(minY, (height - 16) / height);
+          const nextX = node.x + node.vx;
+          const nextY = node.y + node.vy;
+
+          if (nextX < minX) {
+            node.x = minX;
+            node.vx = Math.abs(node.vx);
+          } else if (nextX > maxX) {
+            node.x = maxX;
+            node.vx = -Math.abs(node.vx);
+          } else {
+            node.x = nextX;
+          }
+
+          if (nextY < minY) {
+            node.y = minY;
+            node.vy = Math.abs(node.vy);
+          } else if (nextY > maxY) {
+            node.y = maxY;
+            node.vy = -Math.abs(node.vy);
+          } else {
+            node.y = nextY;
+          }
+        } else {
+          const minX = 16 / width;
+          const maxX = Math.max(minX, (width - context.measureText(node.label).width - 12) / width);
+          const minY = 20 / height;
+          const maxY = Math.max(minY, (height - 16) / height);
+          node.x = Math.min(maxX, Math.max(minX, node.x));
+          node.y = Math.min(maxY, Math.max(minY, node.y));
         }
       });
 
@@ -90,7 +120,6 @@ export const AINetworkGraph = () => {
         context.arc(x, y, 4, 0, Math.PI * 2);
         context.fillStyle = accent;
         context.fill();
-        context.font = '12px IBM Plex Mono, monospace';
         context.fillStyle = ink;
         context.fillText(node.label, x + 8, y + 4);
       });

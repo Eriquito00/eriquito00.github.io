@@ -69,12 +69,12 @@
   margin-top: var(--s-6);
 }
 .hero-link-button {
-  min-height: 3rem;
+  min-height: var(--control-height);
   display: inline-flex;
   align-items: center;
   padding: 0 0.9rem;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: var(--control-radius);
   color: var(--muted);
   font: 600 0.7rem var(--mono);
 }
@@ -90,8 +90,8 @@
 }
 .ai-network-graph {
   position: relative;
-  width: min(100%, 470px);
-  min-height: 380px;
+  width: min(100%, 500px);
+  min-height: 450px;
   overflow: hidden;
   background: var(--code);
   border: 1px solid color-mix(in srgb, var(--accent) 44%, var(--code));
@@ -145,14 +145,20 @@
   font: 0.7rem var(--mono);
 }
 .text-link {
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid var(--accent);
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
   color: var(--accent);
   font: 600 0.72rem var(--mono);
-  white-space: nowrap;
+  text-decoration: none;
 }
-.text-link span {
-  margin-left: 0.5rem;
+@media (max-width: 520px) {
+  .text-link {
+    align-self: flex-start;
+  }
 }
 @keyframes graph-pulse {
   50% {

@@ -20,6 +20,9 @@
   .hero-section {
     padding-top: 7rem;
   }
+  #main-content > section:not(.hero-section) {
+    padding-block: var(--s-6);
+  }
   .contact-content {
     gap: var(--s-6);
   }
@@ -80,6 +83,9 @@
   .hero-section {
     padding-top: 6rem;
     padding-bottom: var(--s-6);
+  }
+  #main-content > section:not(.hero-section) {
+    padding-block: var(--s-5);
   }
   .hero-name {
     font-size: clamp(2.8rem, 15vw, 4rem);

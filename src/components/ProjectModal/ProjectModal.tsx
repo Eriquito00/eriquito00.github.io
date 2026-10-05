@@ -50,11 +50,11 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         <div className="modal-footer">
           <div className="modal-links">
             <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="modal-link">
-              {t.projects.repository} ↗
+              {t.projects.repository}
             </a>
             {project.liveUrl && (
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="modal-link">
-                {t.projects.liveDemo} ↗
+                {t.projects.liveDemo}
               </a>
             )}
           </div>

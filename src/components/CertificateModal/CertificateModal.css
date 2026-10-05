@@ -54,14 +54,20 @@
   background: var(--surface);
   color: var(--ink);
   border: 0;
+  border-radius: var(--control-radius);
   font-size: 1.4rem;
   cursor: pointer;
 }
 .modal-link {
+  min-height: var(--control-height);
+  display: inline-flex;
+  align-items: center;
   padding: 0.65rem 0.75rem;
   border: 1px solid var(--accent);
+  border-radius: var(--control-radius);
   color: var(--accent);
   font: 0.7rem var(--mono);
+  text-decoration: none;
 }
 .modal-link:hover {
   background: var(--accent-soft);
@@ -91,11 +97,9 @@
 
 @media (max-width: 520px) {
   .certificate-modal {
-    width: 100vw;
-    height: 100svh;
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
+    width: calc(100vw - var(--s-4));
+    height: calc(100svh - var(--s-4));
+    border-radius: var(--radius);
   }
   .certificate-viewer {
     height: 50svh;

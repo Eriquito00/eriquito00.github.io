@@ -18,7 +18,7 @@ export const Experience = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {t.experience.openCv} <span>↗</span>
+          {t.experience.openCv}
         </a>
       </div>
       <div className="experience-layout">

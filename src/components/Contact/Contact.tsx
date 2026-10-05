@@ -24,7 +24,7 @@ const Contact = () => {
             <h3 className="contact-info-title contact-slogan">{t.contact.slogan}</h3>
             <div className="contact-links">
               <a className="contact-link" href="mailto:ericmejiasgamonal@gmail.com">
-                Email <span>↗</span>
+                Email
               </a>
               <a
                 className="contact-link"
@@ -32,7 +32,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub <span>↗</span>
+                GitHub
               </a>
               <a
                 className="contact-link"
@@ -40,7 +40,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn <span>↗</span>
+                LinkedIn
               </a>
             </div>
           </div>

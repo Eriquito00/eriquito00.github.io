@@ -37,7 +37,7 @@ export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
         ))}
       </div>
       <div className="project-footer">
-        <span className="project-open">{t.projects.details} <span>↗</span></span>
+        <span className="project-open">{t.projects.details}</span>
         <div className="project-links">
           <a
             href={project.repoUrl}
@@ -47,7 +47,7 @@ export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
             aria-label={`${t.projects.repository}: ${project.name}`}
             onClick={(event) => event.stopPropagation()}
           >
-            ⌘
+            GH
           </a>
           {project.liveUrl && (
             <a
@@ -58,7 +58,7 @@ export const ProjectCard = ({ project, onOpen }: ProjectCardProps) => {
               aria-label={`${t.projects.liveDemo}: ${project.name}`}
               onClick={(event) => event.stopPropagation()}
             >
-              ↗
+              LIVE
             </a>
           )}
         </div>

@@ -13,7 +13,6 @@ export const CertificateCard = ({ certificate, onOpen }: CertificateCardProps) =
         <strong>{certificate.title}</strong>
         <small>{certificate.issuer}</small>
       </span>
-      <span className="certificate-arrow">↗</span>
     </button>
   );
 };
