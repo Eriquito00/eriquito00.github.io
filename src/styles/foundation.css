@@ -2,16 +2,17 @@
 
 :root {
   color-scheme: dark;
-  --base: #111916;
-  --surface: #18231f;
-  --surface-2: #202e29;
-  --ink: #e7eee5;
-  --muted: #aebbb1;
-  --faint: #7f9186;
-  --line: #35473f;
-  --accent: #71d3a5;
-  --accent-soft: #25483a;
-  --code: #0c1412;
+  --base: #050505;
+  --surface: #0d0d0d;
+  --surface-2: #151515;
+  --ink: #f5f5f5;
+  --muted: #a3a3a3;
+  --faint: #808080;
+  --line: #292929;
+  --section-line: #505050;
+  --accent: #ffffff;
+  --accent-soft: #202020;
+  --code: #000000;
   --display: "DM Sans", "Segoe UI", sans-serif;
   --mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
   --s-1: 0.5rem;
@@ -32,16 +33,17 @@
 
 [data-theme="light"] {
   color-scheme: light;
-  --base: #f4f1e8;
-  --surface: #fbf9f3;
-  --surface-2: #eae7dc;
-  --ink: #1e2825;
-  --muted: #65716b;
-  --faint: #8c968f;
-  --line: #ccd1c7;
-  --accent: #176b52;
-  --accent-soft: #cde5d5;
-  --code: #152b28;
+  --base: #ffffff;
+  --surface: #fafafa;
+  --surface-2: #f1f1f1;
+  --ink: #0a0a0a;
+  --muted: #222222;
+  --faint: #303030;
+  --line: #909090;
+  --section-line: #9a9a9a;
+  --accent: #111111;
+  --accent-soft: #ededed;
+  --code: #f7f7f7;
   --shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
 }
 
@@ -63,8 +65,8 @@ body {
   overflow-x: hidden;
   background-color: var(--base);
   background-image:
-    linear-gradient(rgba(23, 107, 82, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(23, 107, 82, 0.055) 1px, transparent 1px);
+    linear-gradient(rgba(127, 127, 127, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 127, 127, 0.08) 1px, transparent 1px);
   background-size: 28px 28px;
   color: var(--ink);
   font-family: var(--display);

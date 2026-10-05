@@ -2,7 +2,7 @@
 
 .skills-section {
   padding: var(--s-8) 0;
-  border-top: 1px solid var(--line);
+  border-top: 2px solid var(--section-line);
 }
 .skills-header {
   max-width: 680px;

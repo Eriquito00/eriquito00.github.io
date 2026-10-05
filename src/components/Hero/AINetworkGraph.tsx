@@ -48,8 +48,8 @@ export const AINetworkGraph = () => {
     const draw = () => {
       const width = parent.clientWidth;
       const height = parent.clientHeight;
-      const accent = getCssColor('--accent', '#34d399');
-      const ink = getCssColor('--ink', '#e7eee5');
+      const accent = getCssColor('--accent', '#ffffff');
+      const ink = getCssColor('--ink', '#f5f5f5');
       context.font = '12px IBM Plex Mono, monospace';
 
       context.clearRect(0, 0, width, height);

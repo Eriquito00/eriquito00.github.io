@@ -18,7 +18,7 @@ const Footer = () => {
           </nav>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Eric Mejias Gamonal · {t.footer.copyright}</p>
+          <p>Eric Mejias Gamonal · {t.footer.copyright}</p>
         </div>
       </div>
     </footer>

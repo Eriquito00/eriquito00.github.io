@@ -39,7 +39,7 @@ const spanish: TranslationDictionary = {
   },
   certificates: { title: 'Certificados', credential: 'credential / pdf', download: 'Descargar PDF', filters: { all: 'Todos', generalitat: 'Generalitat', microsoft: 'Microsoft' } },
   contact: { title: 'Contacto', role: 'Desarrollador web junior · IA y Big Data', location: 'España · disponible presencial, híbrido o remoto', slogan: 'Código abierto, conversación directa.', availability: 'Disponible para conversar', availabilityDetail: 'Sobre desarrollo web, producto, inteligencia artificial y datos.' },
-  footer: { copyright: 'React + TypeScript.' },
+  footer: { copyright: 'TypeScript + React + ESLint + Vite' },
   seo: { title: 'Eric Mejias Gamonal - Portfolio Desarrollador Web', description: 'Portfolio de Eric Mejias Gamonal, desarrollador web junior interesado en IA y Big Data.' }
 };
 

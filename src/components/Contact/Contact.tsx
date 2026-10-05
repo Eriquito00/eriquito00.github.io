@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section" aria-labelledby="contact-title">
       <div className="contact-container">
-        <div className="contact-header">
-          <h2 id="contact-title" className="contact-title">{t.contact.title}</h2>
+        <div className="section-heading-row">
+          <h2 id="contact-title" className="section-title">{t.contact.title}</h2>
         </div>
 
         <div className="contact-content">

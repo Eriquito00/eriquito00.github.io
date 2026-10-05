@@ -2,7 +2,7 @@
 
 .footer {
   padding: var(--s-5) 0;
-  border-top: 1px solid var(--line);
+  border-top: 2px solid var(--section-line);
 }
 .footer-container {
   width: min(1180px, calc(100% - 3rem));
@@ -28,6 +28,7 @@
   color: var(--muted);
   font: 0.68rem var(--mono);
   text-decoration: none;
+  text-decoration: underline;
 }
 .footer-simple-links a:hover {
   color: var(--accent);

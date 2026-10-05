@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     id: 'primero',
     name: 'Primero',
-    category: 'frontend',
+    category: 'fullstack',
     year: '2024',
     description: 'Implementación del juego Uno con TypeScript, Node.js y WebSockets.',
     fullDescription: 'Juego multijugador en tiempo real que utiliza WebSockets para sincronizar partidas y salas. El proyecto pone el foco en la comunicación cliente-servidor y en modelar la lógica de un juego completo.',
