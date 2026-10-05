@@ -40,7 +40,7 @@ const Hero = () => {
             </a>
             <a
               className="hero-link-button"
-              href="/content/ATS_CV_Eric_Mejias.pdf"
+              href="/docs/ATS_CV_Eric_Mejias.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >

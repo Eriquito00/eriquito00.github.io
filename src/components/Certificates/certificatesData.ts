@@ -5,14 +5,14 @@ export const certificates: Certificate[] = [
     id: 'ia',
     title: 'Inteligencia Artificial',
     issuer: 'Generalitat de Catalunya',
-    file: '/content/Generalitat_IA.pdf',
+    file: '/docs/Generalitat_IA.pdf',
     description: 'Certificado relacionado con formación en inteligencia artificial.',
   },
   {
     id: 'cybersecurity',
     title: 'Ciberseguridad',
     issuer: 'Generalitat de Catalunya',
-    file: '/content/Generalitat_Ciberseguretat.pdf',
+    file: '/docs/Generalitat_Ciberseguretat.pdf',
     description: 'Certificado relacionado con formación en ciberseguridad.',
   },
   {
@@ -20,7 +20,7 @@ export const certificates: Certificate[] = [
     title: 'Título de especialista',
     issuer: 'Microsoft',
     filter: 'microsoft',
-    file: '/content/Título Especialista.pdf',
+    file: '/docs/Título Especialista.pdf',
     description: 'Acreditación de formación especializada de Microsoft.',
   },
   {
@@ -28,7 +28,7 @@ export const certificates: Certificate[] = [
     title: 'Excel',
     issuer: 'Microsoft',
     filter: 'microsoft',
-    file: '/content/Título Excel.pdf',
+    file: '/docs/Título Excel.pdf',
     description: 'Acreditación de formación en Microsoft Excel.',
   },
   {
@@ -36,7 +36,7 @@ export const certificates: Certificate[] = [
     title: 'PowerPoint',
     issuer: 'Microsoft',
     filter: 'microsoft',
-    file: '/content/Título PowerPoint.pdf',
+    file: '/docs/Título PowerPoint.pdf',
     description: 'Acreditación de formación en Microsoft PowerPoint.',
   },
   {
@@ -44,7 +44,7 @@ export const certificates: Certificate[] = [
     title: 'Word',
     issuer: 'Microsoft',
     filter: 'microsoft',
-    file: '/content/Título Word.pdf',
+    file: '/docs/Título Word.pdf',
     description: 'Acreditación de formación en Microsoft Word.',
   },
 ];

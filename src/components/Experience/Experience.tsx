@@ -14,7 +14,7 @@ export const Experience = () => {
         <h2 id="experience-title" className="section-title">{t.experience.title}</h2>
         <a
           className="text-link"
-          href="/content/ATS_CV_Eric_Mejias.pdf"
+          href="/docs/ATS_CV_Eric_Mejias.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
