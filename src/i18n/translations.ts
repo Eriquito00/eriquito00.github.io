@@ -18,7 +18,7 @@ const spanish: TranslationDictionary = {
     close: "Cerrar",
   },
   hero: {
-    role: "Desarrollador web junior · IA y Big Data",
+    role: "Desarrollador web · IA y Big Data",
     description:
       "Soy Eric Mejias Gamonal. Desarrollo proyectos web mientras sigo aprendiendo el mundo de la inteligencia artificial y Big Data. Aqui podeis ver más sobre mis proyectos y mi experiencia.",
     location: "España",
@@ -115,73 +115,53 @@ const spanish: TranslationDictionary = {
     copies: {
       rekko: {
         description:
-          "Red social full stack para descubrir y recomendar anime, con una experiencia de producto completa y publicada.",
+          "Rekko-Lists es la organización de una red social de anime full stack, con frontend React + TypeScript y API REST en Node.js, Express y Prisma para recomendaciones e interacción.",
         fullDescription:
-          "Proyecto principal: una red social para descubrir, organizar y recomendar anime. Combina React, TypeScript y Tailwind en el frontend con Node.js, Express y una capa de datos relacional. El proyecto está publicado y reúne autenticación, perfiles, recomendaciones y una experiencia guiada por la comunidad.",
+          "Rekko-Lists desarrolla una red social centrada en el descubrimiento de anime y las recomendaciones. El proyecto integra un frontend SPA con React, Vite, TypeScript, Zustand y Tailwind, junto a una API REST en Node.js, Express, Prisma y PostgreSQL. Incluye autenticación, perfiles, publicaciones, comentarios, reputación, retos diarios, recomendaciones e integración con servicios de anime.",
       },
       rekkophp: {
-        description:
-          "Prototipo PHP de una plataforma de recomendaciones de anime.",
-        fullDescription:
-          "Exploración backend de Rekko con PHP, JavaScript y AJAX. El repositorio trabaja autenticación, comunicación cliente-servidor y organización de una aplicación web orientada a recomendaciones.",
+        description: "Prototipo de plataforma de recomendaciones de anime desarrollada en PHP, con arquitectura MVC, autenticación JWT y OAuth2, gestión de usuarios y persistencia en MySQL.",
+        fullDescription: "Prototipo de una plataforma de recomendaciones de anime desarrollada en PHP, que sirvió como base para la posterior evolución de Rekko. Implementa una arquitectura MVC propia, autenticación mediante JWT y OAuth2 con GitHub, refresh tokens, gestión de usuarios y roles, recuperación de contraseña, reCAPTCHA y persistencia en MySQL mediante PDO. También incorpora PHPStan para análisis estático."
       },
       astronomy: {
-        description:
-          "Artículos de astronomía desde la API REST de Wikipedia con persistencia y paginación.",
-        fullDescription:
-          "Aplicación PHP que consume la API REST de Wikipedia, guarda el contenido en MySQL y lo presenta con paginación. Es un ejercicio práctico de integración de APIs, persistencia y navegación de datos.",
+        description: "Aplicación PHP que consume la API REST de Wikipedia para obtener artículos de astronomía, almacenarlos en MySQL y mostrarlos mediante una interfaz MVC con paginación.",
+        fullDescription: "Aplicación web desarrollada en PHP que consume la API REST de Wikipedia para obtener artículos cortos de astronomía, incluyendo imágenes, y almacenarlos en una base de datos MySQL mediante PDO. Utiliza una arquitectura MVC y permite configurar los artículos mediante CSV, recargarlos bajo demanda y mostrarlos mediante paginación configurable. El proyecto está preparado para ejecutarse con Apache, PHP y MySQL mediante XAMPP."
       },
       geoqueryai: {
-        description:
-          "Consultas geográficas en lenguaje natural visualizadas sobre un mapa.",
-        fullDescription:
-          "Aplicación que interpreta consultas en lenguaje natural sobre lugares geográficos y muestra los resultados en un mapa interactivo. Es uno de los proyectos que conecta de forma más directa el desarrollo web con la inteligencia artificial.",
+        description: "Aplicación web que combina consultas en lenguaje natural con datos geográficos para buscar lugares y representar los resultados en un mapa mediante IA y una arquitectura cliente-servidor.",
+        fullDescription: "Aplicación web que permite realizar consultas en lenguaje natural sobre lugares geográficos y visualizar los resultados directamente sobre un mapa. El proyecto utiliza una arquitectura cliente-servidor separando frontend y backend, con TypeScript en el cliente y Node.js en el servidor. Integra un modelo de IA mediante la API de OpenAI para interpretar las consultas y transformarlas en búsquedas geográficas, proporcionando una forma más natural de explorar ubicaciones."
       },
       primero: {
-        description:
-          "Implementación del juego Uno con TypeScript, Node.js y WebSockets.",
-        fullDescription:
-          "Juego multijugador en tiempo real que utiliza WebSockets para sincronizar partidas y salas. El proyecto pone el foco en la comunicación cliente-servidor y en modelar la lógica de un juego completo.",
+        description: "Juego multijugador inspirado en UNO desarrollado con TypeScript, Node.js y WebSockets, con frontend y servidor independientes y preparado para despliegue en Render.",
+        fullDescription: "Juego multijugador inspirado en UNO desarrollado para practicar comunicación en tiempo real mediante WebSockets. El proyecto utiliza TypeScript y Node.js, separando frontend, servidor y scripts auxiliares. La arquitectura permite gestionar partidas y comunicación entre jugadores en tiempo real, y el proyecto está preparado para desplegarse como un único servicio Node.js en Render mediante un Blueprint y un proceso de build específico para producción.",
       },
       "iabd-notes": {
-        description:
-          "Repositorio de apuntes de Inteligencia Artificial y Big Data.",
-        fullDescription:
-          "Repositorio académico para organizar apuntes, ejercicios y material de estudio de la especialización en Inteligencia Artificial y Big Data.",
+        description: "Repositorio de apuntes y material de estudio sobre Inteligencia Artificial y Big Data, organizado por áreas como modelos de IA, programación, aprendizaje automático y sistemas Big Data.",
+        fullDescription: "Repositorio personal de apuntes y material de estudio del ámbito de Inteligencia Artificial y Big Data. El contenido está organizado en diferentes áreas, incluyendo Big Data aplicado, modelos de IA, programación de IA, sistemas de aprendizaje automático y sistemas de Big Data. También incorpora recursos visuales y una estructura compatible con Obsidian para facilitar la organización y consulta del contenido.",
       },
       "webdev-notes": {
-        description: "Repositorio de apuntes y referencias de desarrollo web.",
-        fullDescription:
-          "Repositorio personal para reunir apuntes, referencias y material de consulta relacionado con el desarrollo web.",
+        description:  "Repositorio de apuntes de Desarrollo de Aplicaciones Web que reúne contenidos de frontend, backend, bases de datos, sistemas, SEO, despliegue, Git y diseño web.",
+        fullDescription: "Repositorio de apuntes y material de estudio de Desarrollo de Aplicaciones Web, organizado por las diferentes áreas del ciclo DAW. Incluye contenidos de frontend y backend, bases de datos, persistencia, programación, sistemas informáticos, diseño de interfaces, despliegue, SEO, Git y GitHub y lenguajes de marcas. Está estructurado para consultar y mantener de forma organizada el aprendizaje técnico del ciclo.",
       },
       climbing: {
-        description:
-          "Aplicación de gestión de escalada con Java, MySQL y JDBC.",
-        fullDescription:
-          "Proyecto colaborativo de gestión de escalada con persistencia en MySQL mediante JDBC. El CV también recoge el uso de Maven, Docker y OAuth2 en el entorno técnico del proyecto.",
+        description: "Aplicación de gestión de escalada desarrollada en Java con MySQL y JDBC, con persistencia de datos, pruebas y un entorno reproducible mediante Docker y Maven.",
+        fullDescription: "Aplicación de gestión relacionada con la escalada desarrollada en Java, utilizando MySQL como sistema de persistencia y JDBC para la comunicación con la base de datos. El proyecto trabaja con Java 21, Maven y Docker, incluyendo un entorno contenedorizado para la base de datos y una estructura preparada para desarrollo y pruebas. Fue desarrollado conjuntamente como proyecto académico y cuenta además con tests y documentación del sistema.",
       },
       pokeapi: {
-        description:
-          "Base de datos MySQL construida a partir de datos de PokeAPI.",
-        fullDescription:
-          "Proyecto colaborativo de integración y gestión de datos: obtiene información de PokeAPI, la modela en MySQL y permite trabajar con consultas sobre el conjunto de datos.",
+        description: "Proyecto de integración de datos que consume la PokeAPI, transforma su información y la almacena en una base de datos relacional MySQL mediante scripts de carga y modelos documentados.",
+        fullDescription: "Proyecto centrado en la integración y persistencia de datos procedentes de la PokeAPI. El sistema consume información de la API, la procesa y la carga en una base de datos relacional MySQL. Incluye el diseño del modelo entidad-relación y modelo relacional, scripts DDL y DML, documentación y código organizado para la obtención e inserción de datos. El objetivo principal es trabajar el flujo completo desde una API externa hasta una base de datos estructurada.",
       },
       collections: {
-        description:
-          "Lógica de gestión de productos para un supermercado ficticio.",
-        fullDescription:
-          "Proyecto Java centrado en colecciones, programación orientada a objetos y manejo de excepciones para resolver un caso de gestión de productos desde terminal.",
+        description: "Aplicación de consola en Java para gestionar productos de un supermercado, practicando programación orientada a objetos, Collections, herencia, ordenación y manejo de excepciones.",
+        fullDescription: "Aplicación de consola desarrollada en Java que simula la gestión de productos de un supermercado. Implementa diferentes tipos de productos mediante herencia y clases especializadas para alimentación, electrónica y textil. El proyecto está orientado a practicar el uso de Collections, ordenación de elementos y gestión de excepciones según las diferentes situaciones del programa, aplicando conceptos de programación orientada a objetos.",
       },
       myanimelist: {
-        description: "Cliente Java para consumir MyAnimeList con OAuth2 y JWT.",
-        fullDescription:
-          "Aplicación Java orientada a consumir la API oficial de MyAnimeList mediante OAuth2 y tokens JWT, con foco en autenticación y consumo de APIs externas.",
+        description:  "Aplicación Java que consume la API oficial de MyAnimeList mediante OAuth2 y JWT, integrando autenticación, acceso a datos de anime y una base de datos gestionada con Docker.",
+        fullDescription: "Aplicación desarrollada en Java centrada en el consumo de la API oficial de MyAnimeList y el aprendizaje de flujos de autenticación. Implementa OAuth2 y JWT para gestionar el acceso a la API, obteniendo información relacionada con anime y usuarios. El proyecto utiliza Java 21, Maven y Docker, incorporando una base de datos en un contenedor para facilitar el entorno de ejecución y persistencia de la aplicación.",
       },
       pianoman: {
-        description:
-          "Práctica interactiva de eventos de teclado, ratón y táctil en TypeScript.",
-        fullDescription:
-          "Pequeño proyecto experimental para probar eventos de teclado, ratón y touch en una interfaz web interactiva.",
+        description: "Aplicación web interactiva que simula un piano virtual y permite reproducir notas mediante teclado, ratón o pantalla táctil, desarrollada con TypeScript, JavaScript, HTML, CSS y SVG.",
+        fullDescription: "Aplicación web interactiva que simula un piano virtual directamente en el navegador. Permite reproducir notas mediante el teclado físico, el ratón y dispositivos táctiles, incorporando resaltado visual de las teclas activadas y soporte para diferentes métodos de interacción. Está desarrollada con TypeScript y JavaScript, utilizando HTML, CSS y SVG para la representación e interacción con el piano.",
       },
     },
   },
@@ -198,7 +178,7 @@ const spanish: TranslationDictionary = {
   },
   contact: {
     title: "Contacto",
-    role: "Desarrollador web junior · IA y Big Data",
+    role: "Desarrollador web · IA y Big Data",
     location: "España · disponible presencial, híbrido o remoto",
     slogan: "Código abierto, conversación directa.",
     availability: "Disponible para conversar",
@@ -209,7 +189,7 @@ const spanish: TranslationDictionary = {
   seo: {
     title: "Eric Mejias Gamonal - Portfolio Desarrollador Web",
     description:
-      "Portfolio de Eric Mejias Gamonal, desarrollador web junior interesado en IA y Big Data.",
+      "Portfolio de Eric Mejias Gamonal, desarrollador web interesado en IA y Big Data.",
   },
 };
 
@@ -231,7 +211,7 @@ const catalan: TranslationDictionary = {
     close: "Tancar",
   },
   hero: {
-    role: "Desenvolupador web junior · IA i Big Data",
+    role: "Desenvolupador web · IA i Big Data",
     description:
       "Soc Eric Mejias Gamonal. Desenvolupo projectes web i de programari mentre continuo formant-me en intel·ligència artificial i Big Data. Aquest lloc reuneix treball personal i acadèmic enllaçat als repositoris originals.",
     location: "Espanya",
@@ -411,7 +391,7 @@ const catalan: TranslationDictionary = {
   },
   contact: {
     title: "Contacte",
-    role: "Desenvolupador web junior · IA i Big Data",
+    role: "Desenvolupador web · IA i Big Data",
     location: "Espanya · disponibilitat presencial, híbrida o remota",
     slogan: "Codi obert, conversa directa.",
     availability: "Disponible per conversar",
@@ -422,7 +402,7 @@ const catalan: TranslationDictionary = {
   seo: {
     title: "Eric Mejias Gamonal - Portfolio de Desenvolupador Web",
     description:
-      "Portfolio d’Eric Mejias Gamonal, desenvolupador web junior interessat en IA i Big Data.",
+      "Portfolio d’Eric Mejias Gamonal, desenvolupador web interessat en IA i Big Data.",
   },
 };
 
@@ -444,7 +424,7 @@ const english: TranslationDictionary = {
     close: "Close",
   },
   hero: {
-    role: "Junior web developer · AI & Big Data",
+    role: "Web developer · AI & Big Data",
     description:
       "I am Eric Mejias Gamonal. I build web and software projects while studying artificial intelligence and Big Data. This site brings together personal and academic work linked to its original repositories.",
     location: "Spain",
@@ -617,7 +597,7 @@ const english: TranslationDictionary = {
   },
   contact: {
     title: "Contact",
-    role: "Junior web developer · AI & Big Data",
+    role: "Web developer · AI & Big Data",
     location: "Spain · on-site, hybrid or remote availability",
     slogan: "Open source, direct conversation.",
     availability: "Open to conversations",
@@ -628,7 +608,7 @@ const english: TranslationDictionary = {
   seo: {
     title: "Eric Mejias Gamonal - Web Developer Portfolio",
     description:
-      "Portfolio of Eric Mejias Gamonal, a junior web developer interested in AI and Big Data.",
+      "Portfolio of Eric Mejias Gamonal, a web developer interested in AI and Big Data.",
   },
 };
 

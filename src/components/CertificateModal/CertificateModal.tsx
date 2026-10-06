@@ -45,7 +45,7 @@ export const CertificateModal = ({ certificate, onClose }: CertificateModalProps
           <h2 id="certificate-modal-title">{certificate.title}</h2>
           <p>{certificate.issuer}</p>
           <p className="certificate-description">{certificate.description}</p>
-          <a className="modal-link" href={certificate.file} download>
+          <a className="modal-link-download" href={certificate.file} download>
             {t.certificates.download} <span>↓</span>
           </a>
         </div>

@@ -236,6 +236,42 @@ button {
   transform: rotate(18deg) translateX(680%);
 }
 
+.modal-link-download {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform var(--fast) ease,
+    background-color var(--fast) ease,
+    border-color var(--fast) ease,
+    color var(--fast) ease,
+    box-shadow var(--fast) ease;
+}
+.modal-link-download:hover {
+  transform: translateY(-2px);
+}
+.modal-link-download:active {
+  transform: translateY(0) scale(0.98);
+}
+.modal-link-download:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.modal-link-download::after {
+  position: absolute;
+  inset: -80% auto -80% -35%;
+  width: 22%;
+  content: '';
+  background: color-mix(in srgb, var(--base) 34%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transform: rotate(18deg) translateX(-240%);
+  transition: opacity var(--fast) ease, transform 720ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.modal-link-download:hover::after {
+  opacity: 1;
+  transform: rotate(18deg) translateX(680%);
+}
+
 img {
   display: block;
   max-width: 100%;

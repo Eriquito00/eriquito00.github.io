@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 import { useLanguage } from '../../i18n/useLanguage';
 import type { Project } from '../../types/portfolio';
 import './ProjectModal.css';
+import githubBlack from '../../assets/icons/github-black.webp';
+import githubWhite from '../../assets/icons/github-white.webp';
+import worldBlack from '../../assets/icons/world-black.svg';
+import worldWhite from '../../assets/icons/world-white.svg';
 
 interface ProjectModalProps {
   project: Project;
@@ -53,11 +57,13 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
         <div className="modal-footer">
           <div className="modal-links">
             <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="modal-link">
-              {t.projects.repository}
+              <img className="icon icon-black" src={githubBlack} alt="" />
+              <img className="icon icon-white" src={githubWhite} alt="" />
             </a>
             {project.liveUrl && (
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="modal-link">
-                {t.projects.liveDemo}
+                <img className="icon icon-black" src={worldBlack} alt="" />
+                <img className="icon icon-white" src={worldWhite} alt="" />
               </a>
             )}
           </div>

@@ -8,8 +8,6 @@ export interface Project {
   image?: string;
   category: ProjectCategory;
   year: string;
-  description: string;
-  fullDescription: string;
   tags: string[];
   repoUrl: string;
   liveUrl?: string;

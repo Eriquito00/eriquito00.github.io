@@ -59,8 +59,9 @@
   font-size: 1.4rem;
   cursor: pointer;
 }
-.modal-link {
+.modal-link-download {
   min-height: var(--control-height);
+  width: 100%;
   display: inline-flex;
   align-items: center;
   padding: 0.65rem 0.75rem;
@@ -72,7 +73,7 @@
   font: 0.7rem var(--mono);
   text-decoration: none;
 }
-.modal-link:hover {
+.modal-link-download:hover {
   border-color: var(--ink);
   background: var(--ink);
   color: var(--base);
