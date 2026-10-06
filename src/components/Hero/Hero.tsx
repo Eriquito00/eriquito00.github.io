@@ -32,11 +32,19 @@ const Hero = () => {
             </a>
             <a
               className="hero-link-button"
-              href="https://www.linkedin.com/in/eric-mejias-gamonal-6114322b5/"
+              href="https://www.linkedin.com/in/eric-mejias-gamonal/"
               target="_blank"
               rel="noopener noreferrer"
             >
               {t.hero.linkedin}
+            </a>
+            <a
+              className="hero-link-button"
+              href="https://www.blogger.com/profile/00987636027947868735"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.hero.blogger}
             </a>
             <a
               className="hero-link-button"

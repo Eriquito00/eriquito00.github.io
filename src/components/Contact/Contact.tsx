@@ -23,24 +23,29 @@ const Contact = () => {
             <p className="contact-location">{t.contact.location}</p>
             <h3 className="contact-info-title contact-slogan">{t.contact.slogan}</h3>
             <div className="contact-links">
-              <a className="contact-link" href="mailto:ericmejiasgamonal@gmail.com">
-                Email
-              </a>
               <a
                 className="contact-link"
                 href="https://github.com/Eriquito00"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub
+                {t.hero.github}
               </a>
               <a
                 className="contact-link"
-                href="https://www.linkedin.com/in/eric-mejias-gamonal-6114322b5/"
+                href="https://www.linkedin.com/in/eric-mejias-gamonal/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn
+                {t.hero.linkedin}
+              </a>
+              <a
+                className="contact-link"
+                href="https://www.blogger.com/profile/00987636027947868735"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.hero.blogger}
               </a>
             </div>
           </div>

@@ -26,6 +26,7 @@ const spanish: TranslationDictionary = {
     stack: "TypeScript · React · Node.js · Express · Python",
     github: "GitHub",
     linkedin: "LinkedIn",
+    blogger: "Blogger",
     cv: "CV",
     status: "available to explore",
     profileNow: "Especialización en IA y Big Data",
@@ -179,7 +180,7 @@ const spanish: TranslationDictionary = {
   contact: {
     title: "Contacto",
     role: "Desarrollador web · IA y Big Data",
-    location: "España · disponible presencial, híbrido o remoto",
+    location: "España · disponible presencial, híbrido o remoto · ericmejiasgamonal@gmail.com",
     slogan: "Código abierto, conversación directa.",
     availability: "Disponible para conversar",
     availabilityDetail:
@@ -219,6 +220,7 @@ const catalan: TranslationDictionary = {
     stack: "React · Node · Python · Java",
     github: "GitHub",
     linkedin: "LinkedIn",
+    blogger: "Blogger",
     cv: "CV",
     status: "available to explore",
     profileNow: "Especialització en IA i Big Data",
@@ -432,6 +434,7 @@ const english: TranslationDictionary = {
     stack: "React · Node · Python · Java",
     github: "GitHub",
     linkedin: "LinkedIn",
+    blogger: "Blogger",
     cv: "CV",
     status: "available to explore",
     profileNow: "AI & Big Data specialization",

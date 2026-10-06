@@ -30,6 +30,7 @@ export interface TranslationDictionary {
     stack: string;
     github: string;
     linkedin: string;
+    blogger: string;
     cv: string;
     status: string;
     profileNow: string;
