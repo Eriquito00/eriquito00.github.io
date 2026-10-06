@@ -73,6 +73,7 @@ export interface TranslationDictionary {
     slogan: string;
     availability: string;
     availabilityDetail: string;
+    copyEmail: string;
   };
   footer: {
     copyright: string;

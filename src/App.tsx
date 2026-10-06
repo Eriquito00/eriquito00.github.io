@@ -38,7 +38,7 @@ const App = () => {
         <Certificates setActiveCertificate={setActiveCertificate} />
         <Contact />
       </main>
-      <Footer />
+      <Footer theme={theme} />
       {activeProject && (
         <ProjectModal
           project={activeProject}

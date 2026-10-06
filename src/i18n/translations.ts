@@ -185,6 +185,7 @@ const spanish: TranslationDictionary = {
     availability: "Disponible para conversar",
     availabilityDetail:
       "Sobre desarrollo web, producto, inteligencia artificial y datos.",
+    copyEmail: "Correo copiado",
   },
   footer: { copyright: "TypeScript + React + ESLint + Vite" },
   seo: {
@@ -399,6 +400,7 @@ const catalan: TranslationDictionary = {
     availability: "Disponible per conversar",
     availabilityDetail:
       "Sobre desenvolupament web, producte, intel·ligència artificial i dades.",
+    copyEmail: "Copiar correu",
   },
   footer: { copyright: "React + TypeScript." },
   seo: {
@@ -606,6 +608,7 @@ const english: TranslationDictionary = {
     availability: "Open to conversations",
     availabilityDetail:
       "About web development, product, artificial intelligence and data.",
+    copyEmail: "Copy email",
   },
   footer: { copyright: "React + TypeScript." },
   seo: {

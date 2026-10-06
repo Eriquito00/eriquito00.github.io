@@ -14,8 +14,29 @@
   justify-content: space-between;
   gap: var(--s-5);
 }
-.footer-name {
+.footer-brand-link {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
   color: var(--ink);
+  text-decoration: none;
+  transition: color var(--fast);
+}
+.footer-brand-link:hover {
+  color: var(--accent);
+}
+.footer-brand-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.footer-github-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.footer-name {
+  color: inherit;
   font: 600 0.8rem var(--mono);
 }
 .footer-simple-links {
@@ -33,6 +54,10 @@
 .footer-simple-links a:hover {
   color: var(--accent);
 }
+.footer-email-link {
+  position: relative;
+  display: inline-flex;
+}
 .footer-bottom {
   display: flex;
   align-items: center;
@@ -46,6 +71,31 @@
 }
 .footer-copyright p {
   margin: 0;
+}
+.footer-confirmation-message {
+  position: absolute;
+  right: 2rem;
+  bottom: calc(100% + 0.5rem);
+  z-index: 2;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--control-radius);
+  background: var(--surface);
+  box-shadow: 0 4px 0 var(--line);
+  color: var(--ink);
+  font: 0.65rem var(--mono);
+  white-space: nowrap;
+  animation: footer-confirmation-in var(--normal) cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes footer-confirmation-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.35rem) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* Responsive */
@@ -67,5 +117,8 @@
   .footer-simple-links {
     flex-direction: column;
     gap: var(--s-2);
+  }
+  .footer-confirmation-message {
+    right: 10rem;
   }
 }
