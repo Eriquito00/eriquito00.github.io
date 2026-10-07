@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { Theme } from '../../types/portfolio';
 import { useLanguage } from '../../i18n/useLanguage';
 import { ThemeToggle } from './ThemeToggle';
@@ -14,6 +14,7 @@ export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
   const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
 
   const sections = [
     { id: 'hero', label: t.navigation.home },
@@ -33,6 +34,23 @@ export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -42,7 +60,7 @@ export const Navigation = ({ theme, toggleTheme }: NavigationProps) => {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`} role="navigation" aria-label={t.navigation.mainLabel}>
+    <nav ref={navRef} className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`} role="navigation" aria-label={t.navigation.mainLabel}>
       <div className="navbar-container">
         <div className="navbar-brand">
           <button
