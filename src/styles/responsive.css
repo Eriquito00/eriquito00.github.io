@@ -12,7 +12,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .main-content,
   .footer-container {
     width: min(100% - 2rem, 680px);

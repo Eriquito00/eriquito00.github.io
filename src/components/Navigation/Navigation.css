@@ -268,7 +268,7 @@
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navbar {
     background: color-mix(in srgb, var(--base) 94%, transparent);
     border-color: var(--line);

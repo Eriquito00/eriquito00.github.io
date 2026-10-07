@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .certificate-modal {
     grid-template-columns: 1fr;
     width: calc(100vw - 1rem);
