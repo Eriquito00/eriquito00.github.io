@@ -28,11 +28,6 @@ const spanish: TranslationDictionary = {
     linkedin: "LinkedIn",
     blogger: "Blogger",
     cv: "CV",
-    status: "available to explore",
-    profileNow: "Especialización en IA y Big Data",
-    profileNext: "¿Ingeniería de datos?",
-    profileInterests: ["desarrollo web", "inteligencia artificial", "datos"],
-    profileStatus: "aprendiendo",
   },
   experience: {
     title: "Experiencia y formación",
@@ -121,48 +116,70 @@ const spanish: TranslationDictionary = {
           "Rekko-Lists desarrolla una red social centrada en el descubrimiento de anime y las recomendaciones. El proyecto integra un frontend SPA con React, Vite, TypeScript, Zustand y Tailwind, junto a una API REST en Node.js, Express, Prisma y PostgreSQL. Incluye autenticación, perfiles, publicaciones, comentarios, reputación, retos diarios, recomendaciones e integración con servicios de anime.",
       },
       rekkophp: {
-        description: "Prototipo de plataforma de recomendaciones de anime desarrollada en PHP, con arquitectura MVC, autenticación JWT y OAuth2, gestión de usuarios y persistencia en MySQL.",
-        fullDescription: "Prototipo de una plataforma de recomendaciones de anime desarrollada en PHP, que sirvió como base para la posterior evolución de Rekko. Implementa una arquitectura MVC propia, autenticación mediante JWT y OAuth2 con GitHub, refresh tokens, gestión de usuarios y roles, recuperación de contraseña, reCAPTCHA y persistencia en MySQL mediante PDO. También incorpora PHPStan para análisis estático."
+        description:
+          "Prototipo de plataforma de recomendaciones de anime desarrollada en PHP, con arquitectura MVC, autenticación JWT y OAuth2, gestión de usuarios y persistencia en MySQL.",
+        fullDescription:
+          "Prototipo de una plataforma de recomendaciones de anime desarrollada en PHP, que sirvió como base para la posterior evolución de Rekko. Implementa una arquitectura MVC propia, autenticación mediante JWT y OAuth2 con GitHub, refresh tokens, gestión de usuarios y roles, recuperación de contraseña, reCAPTCHA y persistencia en MySQL mediante PDO. También incorpora PHPStan para análisis estático.",
       },
       astronomy: {
-        description: "Aplicación PHP que consume la API REST de Wikipedia para obtener artículos de astronomía, almacenarlos en MySQL y mostrarlos mediante una interfaz MVC con paginación.",
-        fullDescription: "Aplicación web desarrollada en PHP que consume la API REST de Wikipedia para obtener artículos cortos de astronomía, incluyendo imágenes, y almacenarlos en una base de datos MySQL mediante PDO. Utiliza una arquitectura MVC y permite configurar los artículos mediante CSV, recargarlos bajo demanda y mostrarlos mediante paginación configurable. El proyecto está preparado para ejecutarse con Apache, PHP y MySQL mediante XAMPP."
+        description:
+          "Aplicación PHP que consume la API REST de Wikipedia para obtener artículos de astronomía, almacenarlos en MySQL y mostrarlos mediante una interfaz MVC con paginación.",
+        fullDescription:
+          "Aplicación web desarrollada en PHP que consume la API REST de Wikipedia para obtener artículos cortos de astronomía, incluyendo imágenes, y almacenarlos en una base de datos MySQL mediante PDO. Utiliza una arquitectura MVC y permite configurar los artículos mediante CSV, recargarlos bajo demanda y mostrarlos mediante paginación configurable. El proyecto está preparado para ejecutarse con Apache, PHP y MySQL mediante XAMPP.",
       },
       geoqueryai: {
-        description: "Aplicación web que combina consultas en lenguaje natural con datos geográficos para buscar lugares y representar los resultados en un mapa mediante IA y una arquitectura cliente-servidor.",
-        fullDescription: "Aplicación web que permite realizar consultas en lenguaje natural sobre lugares geográficos y visualizar los resultados directamente sobre un mapa. El proyecto utiliza una arquitectura cliente-servidor separando frontend y backend, con TypeScript en el cliente y Node.js en el servidor. Integra un modelo de IA mediante la API de OpenAI para interpretar las consultas y transformarlas en búsquedas geográficas, proporcionando una forma más natural de explorar ubicaciones."
+        description:
+          "Aplicación web que combina consultas en lenguaje natural con datos geográficos para buscar lugares y representar los resultados en un mapa mediante IA y una arquitectura cliente-servidor.",
+        fullDescription:
+          "Aplicación web que permite realizar consultas en lenguaje natural sobre lugares geográficos y visualizar los resultados directamente sobre un mapa. El proyecto utiliza una arquitectura cliente-servidor separando frontend y backend, con TypeScript en el cliente y Node.js en el servidor. Integra un modelo de IA mediante la API de OpenAI para interpretar las consultas y transformarlas en búsquedas geográficas, proporcionando una forma más natural de explorar ubicaciones.",
       },
       primero: {
-        description: "Juego multijugador inspirado en UNO desarrollado con TypeScript, Node.js y WebSockets, con frontend y servidor independientes y preparado para despliegue en Render.",
-        fullDescription: "Juego multijugador inspirado en UNO desarrollado para practicar comunicación en tiempo real mediante WebSockets. El proyecto utiliza TypeScript y Node.js, separando frontend, servidor y scripts auxiliares. La arquitectura permite gestionar partidas y comunicación entre jugadores en tiempo real, y el proyecto está preparado para desplegarse como un único servicio Node.js en Render mediante un Blueprint y un proceso de build específico para producción.",
+        description:
+          "Juego multijugador inspirado en UNO desarrollado con TypeScript, Node.js y WebSockets, con frontend y servidor independientes y preparado para despliegue en Render.",
+        fullDescription:
+          "Juego multijugador inspirado en UNO desarrollado para practicar comunicación en tiempo real mediante WebSockets. El proyecto utiliza TypeScript y Node.js, separando frontend, servidor y scripts auxiliares. La arquitectura permite gestionar partidas y comunicación entre jugadores en tiempo real, y el proyecto está preparado para desplegarse como un único servicio Node.js en Render mediante un Blueprint y un proceso de build específico para producción.",
       },
       "iabd-notes": {
-        description: "Repositorio de apuntes y material de estudio sobre Inteligencia Artificial y Big Data, organizado por áreas como modelos de IA, programación, aprendizaje automático y sistemas Big Data.",
-        fullDescription: "Repositorio personal de apuntes y material de estudio del ámbito de Inteligencia Artificial y Big Data. El contenido está organizado en diferentes áreas, incluyendo Big Data aplicado, modelos de IA, programación de IA, sistemas de aprendizaje automático y sistemas de Big Data. También incorpora recursos visuales y una estructura compatible con Obsidian para facilitar la organización y consulta del contenido.",
+        description:
+          "Repositorio de apuntes y material de estudio sobre Inteligencia Artificial y Big Data, organizado por áreas como modelos de IA, programación, aprendizaje automático y sistemas Big Data.",
+        fullDescription:
+          "Repositorio personal de apuntes y material de estudio del ámbito de Inteligencia Artificial y Big Data. El contenido está organizado en diferentes áreas, incluyendo Big Data aplicado, modelos de IA, programación de IA, sistemas de aprendizaje automático y sistemas de Big Data. También incorpora recursos visuales y una estructura compatible con Obsidian para facilitar la organización y consulta del contenido.",
       },
       "webdev-notes": {
-        description:  "Repositorio de apuntes de Desarrollo de Aplicaciones Web que reúne contenidos de frontend, backend, bases de datos, sistemas, SEO, despliegue, Git y diseño web.",
-        fullDescription: "Repositorio de apuntes y material de estudio de Desarrollo de Aplicaciones Web, organizado por las diferentes áreas del ciclo DAW. Incluye contenidos de frontend y backend, bases de datos, persistencia, programación, sistemas informáticos, diseño de interfaces, despliegue, SEO, Git y GitHub y lenguajes de marcas. Está estructurado para consultar y mantener de forma organizada el aprendizaje técnico del ciclo.",
+        description:
+          "Repositorio de apuntes de Desarrollo de Aplicaciones Web que reúne contenidos de frontend, backend, bases de datos, sistemas, SEO, despliegue, Git y diseño web.",
+        fullDescription:
+          "Repositorio de apuntes y material de estudio de Desarrollo de Aplicaciones Web, organizado por las diferentes áreas del ciclo DAW. Incluye contenidos de frontend y backend, bases de datos, persistencia, programación, sistemas informáticos, diseño de interfaces, despliegue, SEO, Git y GitHub y lenguajes de marcas. Está estructurado para consultar y mantener de forma organizada el aprendizaje técnico del ciclo.",
       },
       climbing: {
-        description: "Aplicación de gestión de escalada desarrollada en Java con MySQL y JDBC, con persistencia de datos, pruebas y un entorno reproducible mediante Docker y Maven.",
-        fullDescription: "Aplicación de gestión relacionada con la escalada desarrollada en Java, utilizando MySQL como sistema de persistencia y JDBC para la comunicación con la base de datos. El proyecto trabaja con Java 21, Maven y Docker, incluyendo un entorno contenedorizado para la base de datos y una estructura preparada para desarrollo y pruebas. Fue desarrollado conjuntamente como proyecto académico y cuenta además con tests y documentación del sistema.",
+        description:
+          "Aplicación de gestión de escalada desarrollada en Java con MySQL y JDBC, con persistencia de datos, pruebas y un entorno reproducible mediante Docker y Maven.",
+        fullDescription:
+          "Aplicación de gestión relacionada con la escalada desarrollada en Java, utilizando MySQL como sistema de persistencia y JDBC para la comunicación con la base de datos. El proyecto trabaja con Java 21, Maven y Docker, incluyendo un entorno contenedorizado para la base de datos y una estructura preparada para desarrollo y pruebas. Fue desarrollado conjuntamente como proyecto académico y cuenta además con tests y documentación del sistema.",
       },
       pokeapi: {
-        description: "Proyecto de integración de datos que consume la PokeAPI, transforma su información y la almacena en una base de datos relacional MySQL mediante scripts de carga y modelos documentados.",
-        fullDescription: "Proyecto centrado en la integración y persistencia de datos procedentes de la PokeAPI. El sistema consume información de la API, la procesa y la carga en una base de datos relacional MySQL. Incluye el diseño del modelo entidad-relación y modelo relacional, scripts DDL y DML, documentación y código organizado para la obtención e inserción de datos. El objetivo principal es trabajar el flujo completo desde una API externa hasta una base de datos estructurada.",
+        description:
+          "Proyecto de integración de datos que consume la PokeAPI, transforma su información y la almacena en una base de datos relacional MySQL mediante scripts de carga y modelos documentados.",
+        fullDescription:
+          "Proyecto centrado en la integración y persistencia de datos procedentes de la PokeAPI. El sistema consume información de la API, la procesa y la carga en una base de datos relacional MySQL. Incluye el diseño del modelo entidad-relación y modelo relacional, scripts DDL y DML, documentación y código organizado para la obtención e inserción de datos. El objetivo principal es trabajar el flujo completo desde una API externa hasta una base de datos estructurada.",
       },
       collections: {
-        description: "Aplicación de consola en Java para gestionar productos de un supermercado, practicando programación orientada a objetos, Collections, herencia, ordenación y manejo de excepciones.",
-        fullDescription: "Aplicación de consola desarrollada en Java que simula la gestión de productos de un supermercado. Implementa diferentes tipos de productos mediante herencia y clases especializadas para alimentación, electrónica y textil. El proyecto está orientado a practicar el uso de Collections, ordenación de elementos y gestión de excepciones según las diferentes situaciones del programa, aplicando conceptos de programación orientada a objetos.",
+        description:
+          "Aplicación de consola en Java para gestionar productos de un supermercado, practicando programación orientada a objetos, Collections, herencia, ordenación y manejo de excepciones.",
+        fullDescription:
+          "Aplicación de consola desarrollada en Java que simula la gestión de productos de un supermercado. Implementa diferentes tipos de productos mediante herencia y clases especializadas para alimentación, electrónica y textil. El proyecto está orientado a practicar el uso de Collections, ordenación de elementos y gestión de excepciones según las diferentes situaciones del programa, aplicando conceptos de programación orientada a objetos.",
       },
       myanimelist: {
-        description:  "Aplicación Java que consume la API oficial de MyAnimeList mediante OAuth2 y JWT, integrando autenticación, acceso a datos de anime y una base de datos gestionada con Docker.",
-        fullDescription: "Aplicación desarrollada en Java centrada en el consumo de la API oficial de MyAnimeList y el aprendizaje de flujos de autenticación. Implementa OAuth2 y JWT para gestionar el acceso a la API, obteniendo información relacionada con anime y usuarios. El proyecto utiliza Java 21, Maven y Docker, incorporando una base de datos en un contenedor para facilitar el entorno de ejecución y persistencia de la aplicación.",
+        description:
+          "Aplicación Java que consume la API oficial de MyAnimeList mediante OAuth2 y JWT, integrando autenticación, acceso a datos de anime y una base de datos gestionada con Docker.",
+        fullDescription:
+          "Aplicación desarrollada en Java centrada en el consumo de la API oficial de MyAnimeList y el aprendizaje de flujos de autenticación. Implementa OAuth2 y JWT para gestionar el acceso a la API, obteniendo información relacionada con anime y usuarios. El proyecto utiliza Java 21, Maven y Docker, incorporando una base de datos en un contenedor para facilitar el entorno de ejecución y persistencia de la aplicación.",
       },
       pianoman: {
-        description: "Aplicación web interactiva que simula un piano virtual y permite reproducir notas mediante teclado, ratón o pantalla táctil, desarrollada con TypeScript, JavaScript, HTML, CSS y SVG.",
-        fullDescription: "Aplicación web interactiva que simula un piano virtual directamente en el navegador. Permite reproducir notas mediante el teclado físico, el ratón y dispositivos táctiles, incorporando resaltado visual de las teclas activadas y soporte para diferentes métodos de interacción. Está desarrollada con TypeScript y JavaScript, utilizando HTML, CSS y SVG para la representación e interacción con el piano.",
+        description:
+          "Aplicación web interactiva que simula un piano virtual y permite reproducir notas mediante teclado, ratón o pantalla táctil, desarrollada con TypeScript, JavaScript, HTML, CSS y SVG.",
+        fullDescription:
+          "Aplicación web interactiva que simula un piano virtual directamente en el navegador. Permite reproducir notas mediante el teclado físico, el ratón y dispositivos táctiles, incorporando resaltado visual de las teclas activadas y soporte para diferentes métodos de interacción. Está desarrollada con TypeScript y JavaScript, utilizando HTML, CSS y SVG para la representación e interacción con el piano.",
       },
     },
   },
@@ -176,11 +193,86 @@ const spanish: TranslationDictionary = {
       microsoft: "Microsoft",
       sapalomera: "Sa Palomera",
     },
+    copies: {
+      ia: {
+        id: "ia",
+        title: "Inteligencia Artificial",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_IA.pdf",
+        description:
+          "Acreditación de la Generalitat de Catalunya tras completar el curso online «Intel·ligència Artificial per a la ciutadania» (8h) en 2026 con un 97,50% de nota.",
+        filter: "generalitat",
+      },
+      cybersecurity: {
+        id: "cybersecurity",
+        title: "Ciberseguridad",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_Ciberseguretat.pdf",
+        description:
+          "Acreditación de la Generalitat de Catalunya por realizar el curso online «Ciberseguretat bàsica per a la ciutadania» (8h) finalizado en 2026 con un 95,11% de nota.",
+        filter: "generalitat",
+      },
+      specialist: {
+        id: "specialist",
+        title: "Título de especialista",
+        issuer: "Microsoft",
+        file: "/docs/Título Especialista.pdf",
+        description:
+          "Certificación Microsoft Office Specialist - Associate obtenida en mayo de 2023, la cual avala el dominio conjunto y certificado en Excel, PowerPoint y Word 2019.",
+        filter: "microsoft",
+      },
+      excel: {
+        id: "excel",
+        title: "Excel",
+        issuer: "Microsoft",
+        file: "/docs/Título Excel.pdf",
+        description:
+          "Certificado oficial de Microsoft que acredita las competencias como Microsoft Office Specialist en Excel 2019 Associate, emitido en mayo de 2023 a través de Certiport.",
+        filter: "microsoft",
+      },
+      powerpoint: {
+        id: "powerpoint",
+        title: "PowerPoint",
+        issuer: "Microsoft",
+        file: "/docs/Título PowerPoint.pdf",
+        description:
+          "Acreditación oficial de Microsoft como Microsoft Office Specialist en PowerPoint 2019 Associate, lograda en mayo de 2023 tras superar los requisitos correspondientes.",
+        filter: "microsoft",
+      },
+      word: {
+        id: "word",
+        title: "Word",
+        issuer: "Microsoft",
+        file: "/docs/Título Word.pdf",
+        description:
+          "Certificado oficial de Microsoft que reconoce las competencias como Microsoft Office Specialist en Word 2019 Associate, completado exitosamente en mayo de 2023.",
+        filter: "microsoft",
+      },
+      erasmus: {
+        id: "erasmus+",
+        title: "Erasmus+",
+        issuer: "Sa Palomera",
+        file: "/docs/Erasmus+.pdf",
+        description:
+          "Certificado Erasmus+ por completar prácticas internacionales en LeanKubatore (Italia) entre abril y mayo de 2024, en el marco del programa de la Comisión Europea.",
+        filter: "sapalomera",
+      },
+      honorific: {
+        id: "honorific",
+        title: "Mención Honorífica",
+        issuer: "Sa Palomera",
+        file: "/docs/Menció honorífica.pdf",
+        description:
+          "Mención honorífica otorgada en junio de 2024 por el Institut Sa Palomera tras destacar con una nota media de 8,24 en el CFGM de Sistemas Microinformáticos y Redes.",
+        filter: "sapalomera",
+      },
+    },
   },
   contact: {
     title: "Contacto",
     role: "Desarrollador web · IA y Big Data",
-    location: "España · disponible presencial, híbrido o remoto · ericmejiasgamonal@gmail.com",
+    location:
+      "España · disponible presencial, híbrido o remoto · ericmejiasgamonal@gmail.com",
     slogan: "Código abierto, conversación directa.",
     availability: "Disponible para conversar",
     availabilityDetail:
@@ -215,23 +307,14 @@ const catalan: TranslationDictionary = {
   hero: {
     role: "Desenvolupador web · IA i Big Data",
     description:
-      "Soc Eric Mejias Gamonal. Desenvolupo projectes web i de programari mentre continuo formant-me en intel·ligència artificial i Big Data. Aquest lloc reuneix treball personal i acadèmic enllaçat als repositoris originals.",
+      "Soc Eric Mejias Gamonal. Desenvolupo projectes web mentre continuo aprenent el món de la intel·ligència artificial i el Big Data. Aquí podeu veure més sobre els meus projectes i la meva experiència.",
     location: "Espanya",
     approach: "GitHub-first",
-    stack: "React · Node · Python · Java",
+    stack: "TypeScript · React · Node.js · Express · Python",
     github: "GitHub",
     linkedin: "LinkedIn",
     blogger: "Blogger",
     cv: "CV",
-    status: "available to explore",
-    profileNow: "Especialització en IA i Big Data",
-    profileNext: "Enginyeria de dades?",
-    profileInterests: [
-      "desenvolupament web",
-      "intel·ligència artificial",
-      "dades",
-    ],
-    profileStatus: "aprenent en públic",
   },
   experience: {
     title: "Experiència i formació",
@@ -247,32 +330,32 @@ const catalan: TranslationDictionary = {
     items: {
       seo: {
         role: "Analista SEO",
-        company: "Imàtica · Girona, Catalunya",
+        company: "Imàtica · Girona, Catalunya, Espanya",
         detail:
-          "Auditories tècniques i optimització del posicionament amb Google Search Console, GA4 i SEMrush.",
+          "Auditories tècniques i optimització del posicionament amb GSC, GA4, ADS i SEMrush.",
       },
       geniusx: {
         role: "Desenvolupador Web",
-        company: "GeniusX · Cassà de la Selva",
+        company: "GeniusX · Cassà de la Selva, Catalunya, Espanya",
         detail:
-          "Desenvolupament de funcionalitats per a aplicacions web de client i lliurament de features funcionals.",
+          "Desenvolupament de funcionalitats per a aplicacions web de client i lliurament de features funcionals amb PHP, CodeIgniter, JavaScript i AJAX.",
       },
       erasmus: {
         role: "Tècnic Microinformàtic",
-        company: "Leankubatore · Erasmus+ · Catània, Itàlia",
+        company: "Leankubatore · Erasmus+ · Catània, Sicília, Itàlia",
         detail:
-          "Suport tècnic i manteniment de sistemes en un entorn internacional i multicultural.",
+          "Suport tècnic, manteniment de sistemes i gestió de contingut a WordPress.",
       },
       school: {
         role: "Tècnic Microinformàtic",
-        company: "Escola Maria Cubí i Soler · Malgrat de Mar",
+        company: "Escola Maria Cubí i Soler · Malgrat de Mar, Catalunya, Espanya",
         detail:
-          "Resolució d’incidències de maquinari, programari i xarxes en equips educatius.",
+          "Resolució d'incidències de maquinari, programari i xarxes en equips educatius.",
       },
     },
     studies: {
       ai: "Especialització en Intel·ligència Artificial i Big Data",
-      daW: "Grau Superior en Desenvolupament d’Aplicacions Web",
+      daW: "Grau Superior en Desenvolupament d'Aplicacions Web",
       smr: "Grau Mitjà en Sistemes Microinformàtics i Xarxes",
     },
   },
@@ -284,14 +367,17 @@ const catalan: TranslationDictionary = {
         description: "Interfícies i experiències per al navegador",
       },
       backend: {
-        title: "Backend & APIs",
-        description: "APIs, lògica d’aplicació i temps real",
+        title: "Backend",
+        description: "APIs, lògica d'aplicació i temps real",
       },
       databases: {
         title: "Dades",
         description: "Modelatge, persistència i consultes",
       },
-      tools: { title: "Eines", description: "Eines per construir i compartir" },
+      tools: {
+        title: "Tools",
+        description: "Eines per construir i compartir",
+      },
       learning: { title: "Learning", description: "Noves tecnologies" },
       seo: { title: "SEO", description: "Posicionament tècnic i analítica" },
     },
@@ -312,72 +398,75 @@ const catalan: TranslationDictionary = {
     copies: {
       rekko: {
         description:
-          "Xarxa social full stack per descobrir i recomanar anime, amb una experiència de producte completa i publicada.",
+          "Rekko-Lists és l'organització d'una xarxa social d'anime full stack, amb frontend React + TypeScript i API REST en Node.js, Express i Prisma per a recomanacions i interacció.",
         fullDescription:
-          "Projecte principal: una xarxa social per descobrir, organitzar i recomanar anime. Combina React, TypeScript i Tailwind al frontend amb Node.js, Express i una capa de dades relacional. El projecte està publicat i reuneix autenticació, perfils, recomanacions i una experiència guiada per la comunitat.",
+          "Rekko-Lists desenvolupa una xarxa social centrada en el descobriment d'anime i les recomanacions. El projecte integra un frontend SPA amb React, Vite, TypeScript, Zustand i Tailwind, juntament amb una API REST en Node.js, Express, Prisma i PostgreSQL. Inclou autenticació, perfils, publicacions, comentaris, reputació, reptes diaris, recomanacions i integració amb serveis d'anime.",
       },
       rekkophp: {
-        description: "Prototip PHP d’una plataforma de recomanacions d’anime.",
+        description:
+          "Prototip de plataforma de recomanacions d'anime desenvolupada en PHP, amb arquitectura MVC, autenticació JWT i OAuth2, gestió d'usuaris i persistència en MySQL.",
         fullDescription:
-          "Exploració backend de Rekko amb PHP, JavaScript i AJAX. El repositori treballa l’autenticació, la comunicació client-servidor i l’estructura d’una aplicació web orientada a recomanacions.",
+          "Prototip d'una plataforma de recomanacions d'anime desenvolupada en PHP, que va servir com a base per a la posterior evolució de Rekko. Implementa una arquitectura MVC pròpia, autenticació mitjançant JWT i OAuth2 amb GitHub, refresh tokens, gestió d'usuaris i rols, recuperació de contrasenya, reCAPTCHA i persistència en MySQL mitjançant PDO. També incorpora PHPStan per a anàlisi estàtica.",
       },
       astronomy: {
         description:
-          "Articles d’astronomia des de l’API REST de Wikipedia amb persistència i paginació.",
+          "Aplicació PHP que consumeix l'API REST de Wikipedia per obtenir articles d'astronomia, emmagatzemar-los en MySQL i mostrar-los mitjançant una interfície MVC amb paginació.",
         fullDescription:
-          "Aplicació PHP que consumeix l’API REST de Wikipedia, desa el contingut a MySQL i el presenta amb paginació. És un exercici pràctic d’integració d’APIs, persistència i navegació de dades.",
+          "Aplicació web desenvolupada en PHP que consumeix l'API REST de Wikipedia per obtenir articles curts d'astronomia, incloent imatges, i emmagatzemar-los en una base de dades MySQL mitjançant PDO. Utilitza una arquitectura MVC i permet configurar els articles mitjançant CSV, recarregar-los sota demanda i mostrar-los mitjançant paginació configurable. El projecte està preparat per executar-se amb Apache, PHP i MySQL mitjançant XAMPP.",
       },
       geoqueryai: {
         description:
-          "Consultes geogràfiques en llenguatge natural visualitzades sobre un mapa.",
+          "Aplicació web que combina consultes en llenguatge natural amb dades geogràfiques per cercar llocs i representar els resultats en un mapa mitjançant IA i una arquitectura client-servidor.",
         fullDescription:
-          "Aplicació que interpreta consultes en llenguatge natural sobre llocs geogràfics i mostra els resultats en un mapa interactiu. És un dels projectes que connecta més directament el desenvolupament web amb la intel·ligència artificial.",
+          "Aplicació web que permet realitzar consultes en llenguatge natural sobre llocs geogràfics i visualitzar els resultats directament sobre un mapa. El projecte utilitza una arquitectura client-servidor separant frontend i backend, amb TypeScript al client i Node.js al servidor. Integra un model d'IA mitjançant l'API d'OpenAI per interpretar les consultes i transformar-les en cerques geogràfiques, proporcionant una forma més natural d'explorar ubicacions.",
       },
       primero: {
         description:
-          "Implementació del joc Uno amb TypeScript, Node.js i WebSockets.",
+          "Joc multijugador inspirat en UNO desenvolupat amb TypeScript, Node.js i WebSockets, amb frontend i servidor independents i preparat per a desplegament a Render.",
         fullDescription:
-          "Joc multijugador en temps real que utilitza WebSockets per sincronitzar partides i sales. El projecte se centra en la comunicació client-servidor i en modelar la lògica d’un joc complet.",
+          "Joc multijugador inspirat en UNO desenvolupat per practicar comunicació en temps real mitjançant WebSockets. El projecte utilitza TypeScript i Node.js, separant frontend, servidor i scripts auxiliars. L'arquitectura permet gestionar partides i comunicació entre jugadors en temps real, i el projecte està preparat per desplegar-se com un únic servei Node.js a Render mitjançant un Blueprint i un procés de build específic per a producció.",
       },
       "iabd-notes": {
         description:
-          "Repositori d’apunts d’Intel·ligència Artificial i Big Data.",
+          "Repositori d'apunts i material d'estudi sobre Intel·ligència Artificial i Big Data, organitzat per àrees com models d'IA, programació, aprenentatge automàtic i sistemes Big Data.",
         fullDescription:
-          "Repositori acadèmic per organitzar apunts, exercicis i material d’estudi de l’especialització en Intel·ligència Artificial i Big Data.",
+          "Repositori personal d'apunts i material d'estudi de l'àmbit d'Intel·ligència Artificial i Big Data. El contingut està organitzat en diferents àrees, incloent Big Data aplicat, models d'IA, programació d'IA, sistemes d'aprenentatge automàtic i sistemes de Big Data. També incorpora recursos visuals i una estructura compatible amb Obsidian per facilitar l'organització i consulta del contingut.",
       },
       "webdev-notes": {
         description:
-          "Repositori d’apunts i referències de desenvolupament web.",
+          "Repositori d'apunts de Desenvolupament d'Aplicacions Web que reuneix continguts de frontend, backend, bases de dades, sistemes, SEO, desplegament, Git i disseny web.",
         fullDescription:
-          "Repositori personal per reunir apunts, referències i material de consulta relacionat amb el desenvolupament web.",
+          "Repositori d'apunts i material d'estudi de Desenvolupament d'Aplicacions Web, organitzat per les diferents àrees del cicle DAW. Inclou continguts de frontend i backend, bases de dades, persistència, programació, sistemes informàtics, disseny d'interfícies, desplegament, SEO, Git i GitHub i llenguatges de marques. Està estructurat per consultar i mantenir de forma organitzada l'aprenentatge tècnic del cicle.",
       },
       climbing: {
-        description: "Aplicació de gestió d’escalada amb Java, MySQL i JDBC.",
+        description:
+          "Aplicació de gestió d'escalada desenvolupada en Java amb MySQL i JDBC, amb persistència de dades, proves i un entorn reproduïble mitjançant Docker i Maven.",
         fullDescription:
-          "Projecte col·laboratiu de gestió d’escalada amb persistència a MySQL mitjançant JDBC. El CV també recull l’ús de Maven, Docker i OAuth2 en l’entorn tècnic del projecte.",
+          "Aplicació de gestió relacionada amb l'escalada desenvolupada en Java, utilitzant MySQL com a sistema de persistència i JDBC per a la comunicació amb la base de dades. El projecte treballa amb Java 21, Maven i Docker, incloent un entorn contenidoritzat per a la base de dades i una estructura preparada per a desenvolupament i proves. Va ser desenvolupat conjuntament com a projecte acadèmic i compta a més amb tests i documentació del sistema.",
       },
       pokeapi: {
         description:
-          "Base de dades MySQL construïda a partir de dades de PokeAPI.",
+          "Projecte d'integració de dades que consumeix la PokeAPI, transforma la seva informació i l'emmagatzema en una base de dades relacional MySQL mitjançant scripts de càrrega i models documentats.",
         fullDescription:
-          "Projecte col·laboratiu d’integració i gestió de dades: obté informació de PokeAPI, la modela a MySQL i permet treballar amb consultes sobre el conjunt de dades.",
+          "Projecte centrat en la integració i persistència de dades procedents de la PokeAPI. El sistema consumeix informació de l'API, la processa i la carrega en una base de dades relacional MySQL. Inclou el disseny del model entitat-relació i model relacional, scripts DDL i DML, documentació i codi organitzat per a l'obtenció i inserció de dades. L'objectiu principal és treballar el flux complet des d'una API externa fins a una base de dades estructurada.",
       },
       collections: {
         description:
-          "Lògica de gestió de productes per a un supermercat fictici.",
+          "Aplicació de consola en Java per gestionar productes d'un supermercat, practicant programació orientada a objectes, Collections, herència, ordenació i gestió d'excepcions.",
         fullDescription:
-          "Projecte Java centrat en col·leccions, programació orientada a objectes i gestió d’excepcions per resoldre un cas de gestió de productes des del terminal.",
+          "Aplicació de consola desenvolupada en Java que simula la gestió de productes d'un supermercat. Implementa diferents tipus de productes mitjançant herència i classes especialitzades per a alimentació, electrònica i tèxtil. El projecte està orientat a practicar l'ús de Collections, ordenació d'elements i gestió d'excepcions segons les diferents situacions del programa, aplicant conceptes de programació orientada a objectes.",
       },
       myanimelist: {
-        description: "Client Java per consumir MyAnimeList amb OAuth2 i JWT.",
+        description:
+          "Aplicació Java que consumeix l'API oficial de MyAnimeList mitjançant OAuth2 i JWT, integrant autenticació, accés a dades d'anime i una base de dades gestionada amb Docker.",
         fullDescription:
-          "Aplicació Java orientada a consumir l’API oficial de MyAnimeList mitjançant OAuth2 i tokens JWT, amb focus en autenticació i consum d’APIs externes.",
+          "Aplicació desenvolupada en Java centrada en el consum de l'API oficial de MyAnimeList i l'aprenentatge de fluxos d'autenticació. Implementa OAuth2 i JWT per gestionar l'accés a l'API, obtenint informació relacionada amb anime i usuaris. El projecte utilitza Java 21, Maven i Docker, incorporant una base de dades en un contenidor per facilitar l'entorn d'execució i persistència de l'aplicació.",
       },
       pianoman: {
         description:
-          "Pràctica interactiva d’esdeveniments de teclat, ratolí i tàctil amb TypeScript.",
+          "Aplicació web interactiva que simula un piano virtual i permet reproduir notes mitjançant teclat, ratolí o pantalla tàctil, desenvolupada amb TypeScript, JavaScript, HTML, CSS i SVG.",
         fullDescription:
-          "Petit projecte experimental per provar esdeveniments de teclat, ratolí i tàctils en una interfície web interactiva.",
+          "Aplicació web interactiva que simula un piano virtual directament al navegador. Permet reproduir notes mitjançant el teclat físic, el ratolí i dispositius tàctils, incorporant ressaltat visual de les tecles activades i suport per a diferents mètodes d'interacció. Està desenvolupada amb TypeScript i JavaScript, utilitzant HTML, CSS i SVG per a la representació i interacció amb el piano.",
       },
     },
   },
@@ -391,22 +480,97 @@ const catalan: TranslationDictionary = {
       microsoft: "Microsoft",
       sapalomera: "Sa Palomera",
     },
+    copies: {
+      ia: {
+        id: "ia",
+        title: "Intel·ligència Artificial",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_IA.pdf",
+        description:
+          "Acreditació de la Generalitat de Catalunya després de completar el curs en línia «Intel·ligència Artificial per a la ciutadania» (8h) el 2026 amb un 97,50% de nota.",
+        filter: "generalitat",
+      },
+      cybersecurity: {
+        id: "cybersecurity",
+        title: "Ciberseguretat",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_Ciberseguretat.pdf",
+        description:
+          "Acreditació de la Generalitat de Catalunya per realitzar el curs en línia «Ciberseguretat bàsica per a la ciutadania» (8h) finalitzat el 2026 amb un 95,11% de nota.",
+        filter: "generalitat",
+      },
+      specialist: {
+        id: "specialist",
+        title: "Títol d'especialista",
+        issuer: "Microsoft",
+        file: "/docs/Título Especialista.pdf",
+        description:
+          "Certificació Microsoft Office Specialist - Associate obtinguda el maig de 2023, la qual avala el domini conjunt i certificat en Excel, PowerPoint i Word 2019.",
+        filter: "microsoft",
+      },
+      excel: {
+        id: "excel",
+        title: "Excel",
+        issuer: "Microsoft",
+        file: "/docs/Título Excel.pdf",
+        description:
+          "Certificat oficial de Microsoft que acredita les competències com a Microsoft Office Specialist en Excel 2019 Associate, emès el maig de 2023 a través de Certiport.",
+        filter: "microsoft",
+      },
+      powerpoint: {
+        id: "powerpoint",
+        title: "PowerPoint",
+        issuer: "Microsoft",
+        file: "/docs/Título PowerPoint.pdf",
+        description:
+          "Acreditació oficial de Microsoft com a Microsoft Office Specialist en PowerPoint 2019 Associate, assolida el maig de 2023 després de superar els requisits corresponents.",
+        filter: "microsoft",
+      },
+      word: {
+        id: "word",
+        title: "Word",
+        issuer: "Microsoft",
+        file: "/docs/Título Word.pdf",
+        description:
+          "Certificat oficial de Microsoft que reconeix les competències com a Microsoft Office Specialist en Word 2019 Associate, completat amb èxit el maig de 2023.",
+        filter: "microsoft",
+      },
+      erasmus: {
+        id: "erasmus+",
+        title: "Erasmus+",
+        issuer: "Sa Palomera",
+        file: "/docs/Erasmus+.pdf",
+        description:
+          "Certificat Erasmus+ per completar pràctiques internacionals a LeanKubatore (Itàlia) entre abril i maig de 2024, en el marc del programa de la Comissió Europea.",
+        filter: "sapalomera",
+      },
+      honorific: {
+        id: "honorific",
+        title: "Menció Honorífica",
+        issuer: "Sa Palomera",
+        file: "/docs/Menció honorífica.pdf",
+        description:
+          "Menció honorífica atorgada el juny de 2024 per l'Institut Sa Palomera després de destacar amb una nota mitjana de 8,24 al CFGM de Sistemes Microinformàtics i Xarxes.",
+        filter: "sapalomera",
+      },
+    },
   },
   contact: {
     title: "Contacte",
     role: "Desenvolupador web · IA i Big Data",
-    location: "Espanya · disponibilitat presencial, híbrida o remota",
+    location:
+      "Espanya · disponible presencial, híbrid o remot · ericmejiasgamonal@gmail.com",
     slogan: "Codi obert, conversa directa.",
     availability: "Disponible per conversar",
     availabilityDetail:
       "Sobre desenvolupament web, producte, intel·ligència artificial i dades.",
-    copyEmail: "Copiar correu",
+    copyEmail: "Correu copiat",
   },
-  footer: { copyright: "React + TypeScript." },
+  footer: { copyright: "TypeScript + React + ESLint + Vite" },
   seo: {
     title: "Eric Mejias Gamonal - Portfolio de Desenvolupador Web",
     description:
-      "Portfolio d’Eric Mejias Gamonal, desenvolupador web interessat en IA i Big Data.",
+      "Portfolio d'Eric Mejias Gamonal, desenvolupador web interessat en IA i Big Data.",
   },
 };
 
@@ -414,8 +578,8 @@ const english: TranslationDictionary = {
   languageName: "English",
   navigation: {
     home: "Home",
-    experience: "Background",
-    skills: "Technology",
+    experience: "Experience",
+    skills: "Technologies",
     projects: "Projects",
     certificates: "Certificates",
     contact: "Contact",
@@ -428,21 +592,16 @@ const english: TranslationDictionary = {
     close: "Close",
   },
   hero: {
-    role: "Web developer · AI & Big Data",
+    role: "Web Developer · AI & Big Data",
     description:
-      "I am Eric Mejias Gamonal. I build web and software projects while studying artificial intelligence and Big Data. This site brings together personal and academic work linked to its original repositories.",
+      "I am Eric Mejias Gamonal. I develop web projects while learning about the world of artificial intelligence and Big Data. Here you can see more about my projects and my experience.",
     location: "Spain",
     approach: "GitHub-first",
-    stack: "React · Node · Python · Java",
+    stack: "TypeScript · React · Node.js · Express · Python",
     github: "GitHub",
     linkedin: "LinkedIn",
     blogger: "Blogger",
     cv: "CV",
-    status: "available to explore",
-    profileNow: "AI & Big Data specialization",
-    profileNext: "Data Engineering?",
-    profileInterests: ["web development", "artificial intelligence", "data"],
-    profileStatus: "learning in public",
   },
   experience: {
     title: "Experience and education",
@@ -450,7 +609,7 @@ const english: TranslationDictionary = {
     professionalExperience: "Professional experience",
     education: "Education",
     facts: [
-      "B and A2 driving licences",
+      "B and A2 driving licenses",
       "Native Spanish and Catalan",
       "English B1-B2",
       "On-site, hybrid or remote availability",
@@ -458,51 +617,54 @@ const english: TranslationDictionary = {
     items: {
       seo: {
         role: "SEO Analyst",
-        company: "Imàtica · Girona, Catalonia",
+        company: "Imàtica · Girona, Catalonia, Spain",
         detail:
-          "Technical audits and search positioning optimisation with Google Search Console, GA4 and SEMrush.",
+          "Technical audits and search positioning optimization using GSC, GA4, ADS, and SEMrush.",
       },
       geniusx: {
         role: "Web Developer",
-        company: "GeniusX · Cassà de la Selva",
+        company: "GeniusX · Cassà de la Selva, Catalonia, Spain",
         detail:
-          "Developed features for client web applications and delivered functional work on schedule.",
+          "Development of features for client web applications and delivery of functional features using PHP, CodeIgniter, JavaScript, and AJAX.",
       },
       erasmus: {
         role: "IT Technician",
-        company: "Leankubatore · Erasmus+ · Catania, Italy",
+        company: "Leankubatore · Erasmus+ · Catania, Sicily, Italy",
         detail:
-          "Provided technical support and system maintenance in an international, multicultural environment.",
+          "Technical support, system maintenance, and content management in WordPress.",
       },
       school: {
         role: "IT Technician",
-        company: "Escola Maria Cubí i Soler · Malgrat de Mar",
+        company: "Escola Maria Cubí i Soler · Malgrat de Mar, Catalonia, Spain",
         detail:
-          "Resolved hardware, software and network incidents across educational equipment.",
+          "Resolution of hardware, software, and network incidents on educational equipment.",
       },
     },
     studies: {
-      ai: "Specialisation in Artificial Intelligence and Big Data",
-      daW: "Higher Degree in Web Application Development",
-      smr: "Intermediate Degree in Microcomputer Systems and Networks",
+      ai: "Specialization in Artificial Intelligence and Big Data",
+      daW: "Higher Vocational Degree in Web Application Development",
+      smr: "Intermediate Vocational Degree in Microcomputer Systems and Networks",
     },
   },
   skills: {
-    title: "Technology and tools",
+    title: "Technologies and tools",
     categories: {
       frontend: {
         title: "Frontend",
         description: "Interfaces and browser experiences",
       },
       backend: {
-        title: "Backend & APIs",
-        description: "APIs, application logic and real time",
+        title: "Backend",
+        description: "APIs, application logic, and real-time systems",
       },
       databases: {
         title: "Data",
-        description: "Modelling, persistence and queries",
+        description: "Modeling, persistence, and queries",
       },
-      tools: { title: "Tools", description: "Tools for building and sharing" },
+      tools: {
+        title: "Tools",
+        description: "Tools for building and sharing",
+      },
       learning: { title: "Learning", description: "New technologies" },
       seo: { title: "SEO", description: "Technical positioning and analytics" },
     },
@@ -523,69 +685,75 @@ const english: TranslationDictionary = {
     copies: {
       rekko: {
         description:
-          "A full-stack social network for discovering and recommending anime, with a complete published product experience.",
+          "Rekko-Lists is the organization of a full-stack anime social network, featuring a React + TypeScript frontend and a REST API in Node.js, Express, and Prisma for recommendations and interaction.",
         fullDescription:
-          "Main project: a social network for discovering, organising and recommending anime. It combines React, TypeScript and Tailwind on the frontend with Node.js, Express and a relational data layer. The project is published and brings together authentication, profiles, recommendations and a community-led experience.",
+          "Rekko-Lists develops a social network focused on anime discovery and recommendations. The project integrates an SPA frontend with React, Vite, TypeScript, Zustand, and Tailwind, alongside a REST API in Node.js, Express, Prisma, and PostgreSQL. Includes authentication, profiles, posts, comments, reputation, daily challenges, recommendations, and integration with anime services.",
       },
       rekkophp: {
-        description: "PHP prototype of an anime recommendation platform.",
+        description:
+          "Prototype of an anime recommendation platform developed in PHP, featuring MVC architecture, JWT and OAuth2 authentication, user management, and MySQL persistence.",
         fullDescription:
-          "Backend exploration of Rekko with PHP, JavaScript and AJAX. The repository works with authentication, client-server communication and the structure of a recommendation-focused web application.",
+          "Prototype of an anime recommendation platform developed in PHP, which served as the foundation for Rekko's subsequent evolution. Implements a custom MVC architecture, authentication via JWT and OAuth2 with GitHub, refresh tokens, user and role management, password recovery, reCAPTCHA, and MySQL persistence through PDO. Also incorporates PHPStan for static analysis.",
       },
       astronomy: {
         description:
-          "Astronomy articles from Wikipedia’s REST API with persistence and pagination.",
+          "PHP application that consumes the Wikipedia REST API to retrieve astronomy articles, store them in MySQL, and display them through an MVC interface with pagination.",
         fullDescription:
-          "PHP application that consumes Wikipedia’s REST API, stores content in MySQL and presents it with pagination. A practical exercise in API integration, persistence and data navigation.",
+          "Web application developed in PHP that consumes the Wikipedia REST API to fetch short astronomy articles, including images, and store them in a MySQL database using PDO. Uses an MVC architecture and allows configuring articles via CSV, reloading them on demand, and displaying them with configurable pagination. The project is set up to run with Apache, PHP, and MySQL using XAMPP.",
       },
       geoqueryai: {
-        description: "Natural-language geographic queries visualised on a map.",
+        description:
+          "Web application that combines natural language queries with geographic data to search for places and display results on a map using AI and a client-server architecture.",
         fullDescription:
-          "Application that interprets natural-language queries about geographic places and displays results on an interactive map. It connects web development directly with artificial intelligence.",
+          "Web application that allows users to perform natural language queries about geographic places and visualize the results directly on a map. The project uses a client-server architecture separating frontend and backend, with TypeScript on the client and Node.js on the server. Integrates an AI model via the OpenAI API to interpret queries and transform them into geographic searches, providing a more natural way to explore locations.",
       },
       primero: {
         description:
-          "Uno game implementation with TypeScript, Node.js and WebSockets.",
+          "Multiplayer game inspired by UNO developed with TypeScript, Node.js, and WebSockets, with independent frontend and server, ready for deployment on Render.",
         fullDescription:
-          "Real-time multiplayer game using WebSockets to synchronise rooms and matches. The project focuses on client-server communication and modelling complete game logic.",
+          "Multiplayer game inspired by UNO developed to practice real-time communication using WebSockets. The project uses TypeScript and Node.js, separating frontend, server, and auxiliary scripts. The architecture allows managing games and player communication in real time, and the project is prepared for deployment as a single Node.js service on Render using a Blueprint and a production-specific build process.",
       },
       "iabd-notes": {
         description:
-          "Notes repository for Artificial Intelligence and Big Data.",
+          "Repository of study notes and material on Artificial Intelligence and Big Data, organized by areas such as AI models, programming, machine learning, and Big Data systems.",
         fullDescription:
-          "Academic repository for organising notes, exercises and study material from the Artificial Intelligence and Big Data specialisation.",
+          "Personal repository of study notes and material in the field of Artificial Intelligence and Big Data. The content is organized into different areas, including applied Big Data, AI models, AI programming, machine learning systems, and Big Data systems. It also incorporates visual resources and an Obsidian-compatible structure to facilitate content organization and reference.",
       },
       "webdev-notes": {
-        description: "Notes and references repository for web development.",
+        description:
+          "Web Application Development notes repository bringing together content on frontend, backend, databases, systems, SEO, deployment, Git, and web design.",
         fullDescription:
-          "Personal repository for collecting notes, references and study material related to web development.",
+          "Repository of study notes and material for Web Application Development, organized by the different areas of the vocational program. Includes content on frontend and backend, databases, persistence, programming, computer systems, interface design, deployment, SEO, Git and GitHub, and markup languages. Structured to systematically review and maintain technical learning.",
       },
       climbing: {
         description:
-          "Climbing management application with Java, MySQL and JDBC.",
+          "Climbing management application developed in Java with MySQL and JDBC, featuring data persistence, tests, and a reproducible environment using Docker and Maven.",
         fullDescription:
-          "Collaborative climbing management project with MySQL persistence through JDBC. The CV also documents Maven, Docker and OAuth2 in the project environment.",
+          "Climbing-related management application developed in Java, using MySQL as a persistence system and JDBC for database communication. The project works with Java 21, Maven, and Docker, including a containerized environment for the database and a structure prepared for development and testing. Developed jointly as an academic project and also includes tests and system documentation.",
       },
       pokeapi: {
-        description: "MySQL database built from PokeAPI data.",
+        description:
+          "Data integration project that consumes the PokeAPI, transforms its information, and stores it in a relational MySQL database using load scripts and documented models.",
         fullDescription:
-          "Collaborative data integration project: it retrieves information from PokeAPI, models it in MySQL and enables queries over the dataset.",
+          "Project focused on data integration and persistence from the PokeAPI. The system consumes API information, processes it, and loads it into a relational MySQL database. Includes entity-relationship and relational model design, DDL and DML scripts, documentation, and organized code for data retrieval and insertion. The main goal is to work through the entire pipeline from an external API to a structured database.",
       },
       collections: {
-        description: "Product management logic for a fictional supermarket.",
+        description:
+          "Java console application to manage supermarket products, practicing object-oriented programming, Collections, inheritance, sorting, and exception handling.",
         fullDescription:
-          "Java project focused on collections, object-oriented programming and exception handling for a terminal-based product management case.",
+          "Console application developed in Java simulating product management for a supermarket. Implements different product types using inheritance and specialized classes for food, electronics, and textiles. The project aims to practice Collections, element sorting, and exception handling across different program scenarios, applying object-oriented programming concepts.",
       },
       myanimelist: {
-        description: "Java client consuming MyAnimeList with OAuth2 and JWT.",
+        description:
+          "Java application consuming the official MyAnimeList API via OAuth2 and JWT, integrating authentication, access to anime data, and a database managed with Docker.",
         fullDescription:
-          "Java application consuming the official MyAnimeList API through OAuth2 and JWT tokens, focused on authentication and external API consumption.",
+          "Application developed in Java focused on consuming the official MyAnimeList API and learning authentication flows. Implements OAuth2 and JWT to manage API access, retrieving anime and user-related information. The project uses Java 21, Maven, and Docker, incorporating a database in a container to facilitate application execution and persistence.",
       },
       pianoman: {
         description:
-          "Interactive TypeScript practice for keyboard, mouse and touch events.",
+          "Interactive web application simulating a virtual piano allowing note playback via keyboard, mouse, or touch screen, developed with TypeScript, JavaScript, HTML, CSS, and SVG.",
         fullDescription:
-          "Small experimental project for testing keyboard, mouse and touch events in an interactive web interface.",
+          "Interactive web application that simulates a virtual piano directly in the browser. Allows playing notes via physical keyboard, mouse, and touch devices, featuring visual key highlighting and support for various interaction methods. Developed with TypeScript and JavaScript, using HTML, CSS, and SVG for piano representation and interaction.",
       },
     },
   },
@@ -599,22 +767,97 @@ const english: TranslationDictionary = {
       microsoft: "Microsoft",
       sapalomera: "Sa Palomera",
     },
+    copies: {
+      ia: {
+        id: "ia",
+        title: "Artificial Intelligence",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_IA.pdf",
+        description:
+          "Accreditation from the Generalitat de Catalunya after completing the online course 'Intel·ligència Artificial per a la ciutadania' (8h) in 2026 with a score of 97.50%.",
+        filter: "generalitat",
+      },
+      cybersecurity: {
+        id: "cybersecurity",
+        title: "Cybersecurity",
+        issuer: "Generalitat de Catalunya",
+        file: "/docs/Generalitat_Ciberseguretat.pdf",
+        description:
+          "Accreditation from the Generalitat de Catalunya for completing the online course 'Ciberseguretat bàsica per a la ciutadania' (8h) finished in 2026 with a score of 95.11%.",
+        filter: "generalitat",
+      },
+      specialist: {
+        id: "specialist",
+        title: "Specialist Title",
+        issuer: "Microsoft",
+        file: "/docs/Título Especialista.pdf",
+        description:
+          "Microsoft Office Specialist - Associate certification obtained in May 2023, validating combined and certified proficiency in Excel, PowerPoint, and Word 2019.",
+        filter: "microsoft",
+      },
+      excel: {
+        id: "excel",
+        title: "Excel",
+        issuer: "Microsoft",
+        file: "/docs/Título Excel.pdf",
+        description:
+          "Official Microsoft certificate attesting to skills as a Microsoft Office Specialist in Excel 2019 Associate, issued in May 2023 via Certiport.",
+        filter: "microsoft",
+      },
+      powerpoint: {
+        id: "powerpoint",
+        title: "PowerPoint",
+        issuer: "Microsoft",
+        file: "/docs/Título PowerPoint.pdf",
+        description:
+          "Official Microsoft accreditation as a Microsoft Office Specialist in PowerPoint 2019 Associate, achieved in May 2023 after fulfilling the corresponding requirements.",
+        filter: "microsoft",
+      },
+      word: {
+        id: "word",
+        title: "Word",
+        issuer: "Microsoft",
+        file: "/docs/Título Word.pdf",
+        description:
+          "Official Microsoft certificate recognizing skills as a Microsoft Office Specialist in Word 2019 Associate, successfully completed in May 2023.",
+        filter: "microsoft",
+      },
+      erasmus: {
+        id: "erasmus+",
+        title: "Erasmus+",
+        issuer: "Sa Palomera",
+        file: "/docs/Erasmus+.pdf",
+        description:
+          "Erasmus+ certificate for completing an international internship at LeanKubatore (Italy) between April and May 2024, within the framework of the European Commission program.",
+        filter: "sapalomera",
+      },
+      honorific: {
+        id: "honorific",
+        title: "Honorable Mention",
+        issuer: "Sa Palomera",
+        file: "/docs/Menció honorífica.pdf",
+        description:
+          "Honorable mention awarded in June 2024 by Institut Sa Palomera after standing out with an average grade of 8.24 in the Intermediate Degree in Microcomputer Systems and Networks.",
+        filter: "sapalomera",
+      },
+    },
   },
   contact: {
     title: "Contact",
-    role: "Web developer · AI & Big Data",
-    location: "Spain · on-site, hybrid or remote availability",
+    role: "Web Developer · AI & Big Data",
+    location:
+      "Spain · available on-site, hybrid or remote · ericmejiasgamonal@gmail.com",
     slogan: "Open source, direct conversation.",
-    availability: "Open to conversations",
+    availability: "Available to talk",
     availabilityDetail:
-      "About web development, product, artificial intelligence and data.",
-    copyEmail: "Copy email",
+      "About web development, product, artificial intelligence, and data.",
+    copyEmail: "Email copied",
   },
-  footer: { copyright: "React + TypeScript." },
+  footer: { copyright: "TypeScript + React + ESLint + Vite" },
   seo: {
     title: "Eric Mejias Gamonal - Web Developer Portfolio",
     description:
-      "Portfolio of Eric Mejias Gamonal, a web developer interested in AI and Big Data.",
+      "Portfolio of Eric Mejias Gamonal, web developer interested in AI and Big Data.",
   },
 };
 

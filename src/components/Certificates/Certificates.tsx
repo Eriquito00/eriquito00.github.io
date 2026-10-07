@@ -1,17 +1,15 @@
 import { useState } from 'react';
 import { useLanguage } from '../../i18n/useLanguage';
-import { certificates, certificateFilters } from './certificatesData';
 import { CertificateCard } from './CertificateCard';
-import type { Certificate, CertificateFilter } from '../../types/portfolio';
+import type { Certificate } from '../../types/portfolio';
 import './Certificates.css';
 
-interface CertificatesProps {
-  setActiveCertificate: (certificate: Certificate) => void;
-}
-
-export const Certificates = ({ setActiveCertificate }: CertificatesProps) => {
+export const Certificates = ({ setActiveCertificate }: { setActiveCertificate: (certificate: Certificate) => void }) => {
   const { t } = useLanguage();
-  const [activeFilter, setActiveFilter] = useState<'all' | CertificateFilter>('all');
+  const [activeFilter, setActiveFilter] = useState<'all' | 'microsoft' | 'generalitat' | 'sapalomera'>('all');
+
+  const certificates = Object.values(t.certificates.copies) as Certificate[];
+
   const visibleCertificates = certificates.filter(
     (certificate) => activeFilter === 'all' || (certificate.filter || 'generalitat') === activeFilter
   );
@@ -22,18 +20,18 @@ export const Certificates = ({ setActiveCertificate }: CertificatesProps) => {
         <h2 id="certificates-title" className="section-title">{t.certificates.title}</h2>
       </div>
       <div className="certificate-filters" aria-label="Filtrar certificados">
-        {certificateFilters.map((filter) => (
+        {Object.entries(t.certificates.filters).map(([key, label]) => (
           <button
-            key={filter.id}
-            className={`filter-button ${activeFilter === filter.id ? 'active' : ''}`}
-            onClick={() => setActiveFilter(filter.id)}
-            aria-pressed={activeFilter === filter.id}
+            key={key}
+            className={`filter-button ${activeFilter === key ? 'active' : ''}`}
+            onClick={() => setActiveFilter(key as typeof activeFilter)}
+            aria-pressed={activeFilter === key}
           >
-            {t.certificates.filters[filter.id]}
+            {label}
             <span className="filter-count">
-              {filter.id === 'all'
+              {key === 'all'
                 ? certificates.length
-                : certificates.filter((c) => (c.filter || 'generalitat') === filter.id).length}
+                : certificates.filter((c) => (c.filter || 'generalitat') === key).length}
             </span>
           </button>
         ))}

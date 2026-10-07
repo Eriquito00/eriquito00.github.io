@@ -1,4 +1,6 @@
-export type Language = 'es' | 'ca' | 'en';
+import type { CertificateFilter } from "../types/portfolio";
+
+export type Language = "es" | "ca" | "en";
 
 export interface ProjectCopy {
   description: string;
@@ -32,11 +34,6 @@ export interface TranslationDictionary {
     linkedin: string;
     blogger: string;
     cv: string;
-    status: string;
-    profileNow: string;
-    profileNext: string;
-    profileInterests: string[];
-    profileStatus: string;
   };
   experience: {
     title: string;
@@ -65,6 +62,17 @@ export interface TranslationDictionary {
     filters: Record<string, string>;
     credential: string;
     download: string;
+    copies: Record<
+      string,
+      {
+        id: string;
+        title: string;
+        issuer: string;
+        file: string;
+        description: string;
+        filter: CertificateFilter;
+      }
+    >;
   };
   contact: {
     title: string;

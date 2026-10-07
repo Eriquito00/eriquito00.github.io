@@ -1,5 +1,6 @@
 import { useLanguage } from '../../i18n/useLanguage';
 import './Contact.css';
+import profile from "../../assets/favicon.webp";
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -14,7 +15,7 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <div className="contact-identity">
-              <span className="contact-monogram">EM</span>
+              <img className="contact-monogram" src={profile} alt="Profile"></img>
               <div>
                 <p className="contact-kicker">Eric Mejias Gamonal</p>
                 <p className="contact-role">{t.contact.role}</p>
