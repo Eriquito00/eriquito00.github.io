@@ -93,8 +93,8 @@ body {
   overflow-x: hidden;
   background-color: var(--base);
   background-image:
-    linear-gradient(rgba(127, 127, 127, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(127, 127, 127, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(127, 127, 127, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 127, 127, 0.2) 1px, transparent 1px);
   background-size: 50px 50px;
   color: var(--ink);
   font-family: var(--display);
