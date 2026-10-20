@@ -69,6 +69,7 @@
   padding: 0;
   text-align: center;
   display: flex;
+  align-items: center;
   transition: color var(--normal) ease;
 }
 .nav-link-button:focus-visible,
